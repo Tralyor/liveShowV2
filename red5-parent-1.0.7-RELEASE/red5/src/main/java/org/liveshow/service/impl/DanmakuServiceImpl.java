@@ -18,7 +18,7 @@ public class DanmakuServiceImpl implements DanmakuService {
     @Override
     public int addDanmaku(String userId, Integer roomId, String content) {
         if (StringUtils.isBlank(userId) || roomId == null || !StringUtils.isNumeric(roomId.toString()) ||StringUtils.isBlank(content) ) {
-            return -1;
+            return 0;
         }
 
         Danmaku danmaku = new Danmaku();

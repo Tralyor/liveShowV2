@@ -6,8 +6,8 @@
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="user_id" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="record_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
-      <arg column="gmt_in" jdbcType="TIMESTAMP" javaType="java.util.Date" />
-      <arg column="gmt_out" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="gmt_in" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="gmt_out" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="face_rego_count" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="face_rego_success" jdbcType="INTEGER" javaType="java.lang.Integer" />
     </constructor>
@@ -108,7 +108,7 @@
       gmt_in, gmt_out, face_rego_count, 
       face_rego_success)
     values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{recordId,jdbcType=INTEGER}, 
-      #{gmtIn,jdbcType=TIMESTAMP}, #{gmtOut,jdbcType=TIMESTAMP}, #{faceRegoCount,jdbcType=INTEGER}, 
+      #{gmtIn,jdbcType=VARCHAR}, #{gmtOut,jdbcType=VARCHAR}, #{faceRegoCount,jdbcType=INTEGER}, 
       #{faceRegoSuccess,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="org.liveshow.entity.LearnRecord" >
@@ -147,10 +147,10 @@
         #{recordId,jdbcType=INTEGER},
       </if>
       <if test="gmtIn != null" >
-        #{gmtIn,jdbcType=TIMESTAMP},
+        #{gmtIn,jdbcType=VARCHAR},
       </if>
       <if test="gmtOut != null" >
-        #{gmtOut,jdbcType=TIMESTAMP},
+        #{gmtOut,jdbcType=VARCHAR},
       </if>
       <if test="faceRegoCount != null" >
         #{faceRegoCount,jdbcType=INTEGER},
@@ -179,10 +179,10 @@
         record_id = #{record.recordId,jdbcType=INTEGER},
       </if>
       <if test="record.gmtIn != null" >
-        gmt_in = #{record.gmtIn,jdbcType=TIMESTAMP},
+        gmt_in = #{record.gmtIn,jdbcType=VARCHAR},
       </if>
       <if test="record.gmtOut != null" >
-        gmt_out = #{record.gmtOut,jdbcType=TIMESTAMP},
+        gmt_out = #{record.gmtOut,jdbcType=VARCHAR},
       </if>
       <if test="record.faceRegoCount != null" >
         face_rego_count = #{record.faceRegoCount,jdbcType=INTEGER},
@@ -200,8 +200,8 @@
     set id = #{record.id,jdbcType=INTEGER},
       user_id = #{record.userId,jdbcType=VARCHAR},
       record_id = #{record.recordId,jdbcType=INTEGER},
-      gmt_in = #{record.gmtIn,jdbcType=TIMESTAMP},
-      gmt_out = #{record.gmtOut,jdbcType=TIMESTAMP},
+      gmt_in = #{record.gmtIn,jdbcType=VARCHAR},
+      gmt_out = #{record.gmtOut,jdbcType=VARCHAR},
       face_rego_count = #{record.faceRegoCount,jdbcType=INTEGER},
       face_rego_success = #{record.faceRegoSuccess,jdbcType=INTEGER}
     <if test="_parameter != null" >
@@ -218,10 +218,10 @@
         record_id = #{recordId,jdbcType=INTEGER},
       </if>
       <if test="gmtIn != null" >
-        gmt_in = #{gmtIn,jdbcType=TIMESTAMP},
+        gmt_in = #{gmtIn,jdbcType=VARCHAR},
       </if>
       <if test="gmtOut != null" >
-        gmt_out = #{gmtOut,jdbcType=TIMESTAMP},
+        gmt_out = #{gmtOut,jdbcType=VARCHAR},
       </if>
       <if test="faceRegoCount != null" >
         face_rego_count = #{faceRegoCount,jdbcType=INTEGER},
@@ -236,10 +236,14 @@
     update learn_record
     set user_id = #{userId,jdbcType=VARCHAR},
       record_id = #{recordId,jdbcType=INTEGER},
-      gmt_in = #{gmtIn,jdbcType=TIMESTAMP},
-      gmt_out = #{gmtOut,jdbcType=TIMESTAMP},
+      gmt_in = #{gmtIn,jdbcType=VARCHAR},
+      gmt_out = #{gmtOut,jdbcType=VARCHAR},
       face_rego_count = #{faceRegoCount,jdbcType=INTEGER},
       face_rego_success = #{faceRegoSuccess,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <update id="updateBySql" parameterType="java.lang.String">
+     ${value}
   </update>
 </mapper>

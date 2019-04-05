@@ -1,7 +1,6 @@
 package org.liveshow.entity;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class TeahRecorExample {
@@ -235,52 +234,62 @@ public class TeahRecorExample {
             return (Criteria) this;
         }
 
-        public Criteria andGmtStartEqualTo(Date value) {
+        public Criteria andGmtStartEqualTo(String value) {
             addCriterion("gmt_start =", value, "gmtStart");
             return (Criteria) this;
         }
 
-        public Criteria andGmtStartNotEqualTo(Date value) {
+        public Criteria andGmtStartNotEqualTo(String value) {
             addCriterion("gmt_start <>", value, "gmtStart");
             return (Criteria) this;
         }
 
-        public Criteria andGmtStartGreaterThan(Date value) {
+        public Criteria andGmtStartGreaterThan(String value) {
             addCriterion("gmt_start >", value, "gmtStart");
             return (Criteria) this;
         }
 
-        public Criteria andGmtStartGreaterThanOrEqualTo(Date value) {
+        public Criteria andGmtStartGreaterThanOrEqualTo(String value) {
             addCriterion("gmt_start >=", value, "gmtStart");
             return (Criteria) this;
         }
 
-        public Criteria andGmtStartLessThan(Date value) {
+        public Criteria andGmtStartLessThan(String value) {
             addCriterion("gmt_start <", value, "gmtStart");
             return (Criteria) this;
         }
 
-        public Criteria andGmtStartLessThanOrEqualTo(Date value) {
+        public Criteria andGmtStartLessThanOrEqualTo(String value) {
             addCriterion("gmt_start <=", value, "gmtStart");
             return (Criteria) this;
         }
 
-        public Criteria andGmtStartIn(List<Date> values) {
+        public Criteria andGmtStartLike(String value) {
+            addCriterion("gmt_start like", value, "gmtStart");
+            return (Criteria) this;
+        }
+
+        public Criteria andGmtStartNotLike(String value) {
+            addCriterion("gmt_start not like", value, "gmtStart");
+            return (Criteria) this;
+        }
+
+        public Criteria andGmtStartIn(List<String> values) {
             addCriterion("gmt_start in", values, "gmtStart");
             return (Criteria) this;
         }
 
-        public Criteria andGmtStartNotIn(List<Date> values) {
+        public Criteria andGmtStartNotIn(List<String> values) {
             addCriterion("gmt_start not in", values, "gmtStart");
             return (Criteria) this;
         }
 
-        public Criteria andGmtStartBetween(Date value1, Date value2) {
+        public Criteria andGmtStartBetween(String value1, String value2) {
             addCriterion("gmt_start between", value1, value2, "gmtStart");
             return (Criteria) this;
         }
 
-        public Criteria andGmtStartNotBetween(Date value1, Date value2) {
+        public Criteria andGmtStartNotBetween(String value1, String value2) {
             addCriterion("gmt_start not between", value1, value2, "gmtStart");
             return (Criteria) this;
         }
@@ -295,52 +304,62 @@ public class TeahRecorExample {
             return (Criteria) this;
         }
 
-        public Criteria andGmtEndEqualTo(Date value) {
+        public Criteria andGmtEndEqualTo(String value) {
             addCriterion("gmt_end =", value, "gmtEnd");
             return (Criteria) this;
         }
 
-        public Criteria andGmtEndNotEqualTo(Date value) {
+        public Criteria andGmtEndNotEqualTo(String value) {
             addCriterion("gmt_end <>", value, "gmtEnd");
             return (Criteria) this;
         }
 
-        public Criteria andGmtEndGreaterThan(Date value) {
+        public Criteria andGmtEndGreaterThan(String value) {
             addCriterion("gmt_end >", value, "gmtEnd");
             return (Criteria) this;
         }
 
-        public Criteria andGmtEndGreaterThanOrEqualTo(Date value) {
+        public Criteria andGmtEndGreaterThanOrEqualTo(String value) {
             addCriterion("gmt_end >=", value, "gmtEnd");
             return (Criteria) this;
         }
 
-        public Criteria andGmtEndLessThan(Date value) {
+        public Criteria andGmtEndLessThan(String value) {
             addCriterion("gmt_end <", value, "gmtEnd");
             return (Criteria) this;
         }
 
-        public Criteria andGmtEndLessThanOrEqualTo(Date value) {
+        public Criteria andGmtEndLessThanOrEqualTo(String value) {
             addCriterion("gmt_end <=", value, "gmtEnd");
             return (Criteria) this;
         }
 
-        public Criteria andGmtEndIn(List<Date> values) {
+        public Criteria andGmtEndLike(String value) {
+            addCriterion("gmt_end like", value, "gmtEnd");
+            return (Criteria) this;
+        }
+
+        public Criteria andGmtEndNotLike(String value) {
+            addCriterion("gmt_end not like", value, "gmtEnd");
+            return (Criteria) this;
+        }
+
+        public Criteria andGmtEndIn(List<String> values) {
             addCriterion("gmt_end in", values, "gmtEnd");
             return (Criteria) this;
         }
 
-        public Criteria andGmtEndNotIn(List<Date> values) {
+        public Criteria andGmtEndNotIn(List<String> values) {
             addCriterion("gmt_end not in", values, "gmtEnd");
             return (Criteria) this;
         }
 
-        public Criteria andGmtEndBetween(Date value1, Date value2) {
+        public Criteria andGmtEndBetween(String value1, String value2) {
             addCriterion("gmt_end between", value1, value2, "gmtEnd");
             return (Criteria) this;
         }
 
-        public Criteria andGmtEndNotBetween(Date value1, Date value2) {
+        public Criteria andGmtEndNotBetween(String value1, String value2) {
             addCriterion("gmt_end not between", value1, value2, "gmtEnd");
             return (Criteria) this;
         }

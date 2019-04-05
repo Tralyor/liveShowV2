@@ -2,6 +2,7 @@ package org.liveshow.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -20,5 +21,4 @@ public class TimeTool
         Date date = ft.parse(d);
         return date;
     }
-    
 }

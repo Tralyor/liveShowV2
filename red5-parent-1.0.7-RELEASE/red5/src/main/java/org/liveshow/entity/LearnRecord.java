@@ -1,7 +1,5 @@
 package org.liveshow.entity;
 
-import java.util.Date;
-
 public class LearnRecord {
     private Integer id;
 
@@ -9,15 +7,15 @@ public class LearnRecord {
 
     private Integer recordId;
 
-    private Date gmtIn;
+    private String gmtIn;
 
-    private Date gmtOut;
+    private String gmtOut;
 
     private Integer faceRegoCount;
 
     private Integer faceRegoSuccess;
 
-    public LearnRecord(Integer id, String userId, Integer recordId, Date gmtIn, Date gmtOut, Integer faceRegoCount, Integer faceRegoSuccess) {
+    public LearnRecord(Integer id, String userId, Integer recordId, String gmtIn, String gmtOut, Integer faceRegoCount, Integer faceRegoSuccess) {
         this.id = id;
         this.userId = userId;
         this.recordId = recordId;
@@ -55,20 +53,20 @@ public class LearnRecord {
         this.recordId = recordId;
     }
 
-    public Date getGmtIn() {
+    public String getGmtIn() {
         return gmtIn;
     }
 
-    public void setGmtIn(Date gmtIn) {
-        this.gmtIn = gmtIn;
+    public void setGmtIn(String gmtIn) {
+        this.gmtIn = gmtIn == null ? null : gmtIn.trim();
     }
 
-    public Date getGmtOut() {
+    public String getGmtOut() {
         return gmtOut;
     }
 
-    public void setGmtOut(Date gmtOut) {
-        this.gmtOut = gmtOut;
+    public void setGmtOut(String gmtOut) {
+        this.gmtOut = gmtOut == null ? null : gmtOut.trim();
     }
 
     public Integer getFaceRegoCount() {

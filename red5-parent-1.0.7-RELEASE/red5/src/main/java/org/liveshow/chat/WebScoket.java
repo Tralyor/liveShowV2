@@ -5,7 +5,10 @@ package org.liveshow.chat;
  */
 
 import org.liveshow.chat.content.GetHttpSessionConfigurator;
+import org.liveshow.entity.Tuser;
+import org.liveshow.service.LearnRecordService;
 import org.liveshow.service.resolver.ResolverFactory;
+import org.liveshow.util.SessionUtil;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -31,6 +34,8 @@ public class WebScoket {
 
     @Resource
     ResolverFactory resolverFactory;
+    @Resource
+    LearnRecordService learnRecordService;
     
     public static synchronized int getOnlineCount() {
         return onlineCount;
@@ -64,6 +69,7 @@ public class WebScoket {
      */
     @OnClose
     public void onClose(){
+        resolveEnd();
         webSocketSet.remove(this);  //从set中删除
         subOnlineCount();           //在线数减1
         System.out.println("有一连接关闭！当前在线人数为" + getOnlineCount());
@@ -87,6 +93,7 @@ public class WebScoket {
      */
     @OnError
     public void onError(Session session, Throwable error){
+        resolveEnd();
         System.out.println("发生错误");
         error.printStackTrace();
     }
@@ -118,6 +125,13 @@ public class WebScoket {
 
     public HttpSession getHttpSession() {
         return httpSession;
+    }
+
+    private void resolveEnd() {
+        Tuser tuser = (Tuser) httpSession.getAttribute("user");
+        if ( tuser != null ) {
+            learnRecordService.updateByUserId(tuser.getUserId(), roomId);
+        }
     }
 }
 

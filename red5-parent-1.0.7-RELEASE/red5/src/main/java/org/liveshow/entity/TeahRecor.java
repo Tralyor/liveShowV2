@@ -1,19 +1,17 @@
 package org.liveshow.entity;
 
-import java.util.Date;
-
 public class TeahRecor {
     private Integer id;
 
     private Integer classId;
 
-    private Date gmtStart;
+    private String gmtStart;
 
-    private Date gmtEnd;
+    private String gmtEnd;
 
     private Integer classNum;
 
-    public TeahRecor(Integer id, Integer classId, Date gmtStart, Date gmtEnd, Integer classNum) {
+    public TeahRecor(Integer id, Integer classId, String gmtStart, String gmtEnd, Integer classNum) {
         this.id = id;
         this.classId = classId;
         this.gmtStart = gmtStart;
@@ -41,20 +39,20 @@ public class TeahRecor {
         this.classId = classId;
     }
 
-    public Date getGmtStart() {
+    public String getGmtStart() {
         return gmtStart;
     }
 
-    public void setGmtStart(Date gmtStart) {
-        this.gmtStart = gmtStart;
+    public void setGmtStart(String gmtStart) {
+        this.gmtStart = gmtStart == null ? null : gmtStart.trim();
     }
 
-    public Date getGmtEnd() {
+    public String getGmtEnd() {
         return gmtEnd;
     }
 
-    public void setGmtEnd(Date gmtEnd) {
-        this.gmtEnd = gmtEnd;
+    public void setGmtEnd(String gmtEnd) {
+        this.gmtEnd = gmtEnd == null ? null : gmtEnd.trim();
     }
 
     public Integer getClassNum() {

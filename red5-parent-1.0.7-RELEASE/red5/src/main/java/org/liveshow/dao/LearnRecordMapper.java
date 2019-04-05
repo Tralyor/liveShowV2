@@ -28,4 +28,6 @@ public interface LearnRecordMapper {
     int updateByPrimaryKeySelective(LearnRecord record);
 
     int updateByPrimaryKey(LearnRecord record);
+
+    void updateBySql(String sql);
 }

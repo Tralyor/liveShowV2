@@ -49,15 +49,7 @@
                 <img src="/static/img/logo/logo-0.png" alt="">
             </div>
             <div id="headContent">
-                <div style="height: 32%;"><h4>${room.className}</h4></div>
-                <div style="height: 30%;color: #838C9A">3333 <span class="glyphicon glyphicon-triangle-right"
-                                                                   aria-hidden="true"></span> 333
-                </div>
-                <div style="height:20%;">${room.className} <span class="glyphicon glyphicon-fire" style="color: #FF7676"
-                                                                 aria-hidden="true"></span> <span>todo</span>
-
-                    <span>状态：</span><span id="state">正在直播</span>
-                </div>
+                <div><h2>${room.className}</h2></div>
             </div>
         </div>
         <div class="video" id="CuPlayer">
@@ -126,7 +118,7 @@
     }
 
     function error(error) {
-        console.log(`访问用户媒体设备失败${error.name}, ${error.message}`);
+        console.log("访问用户媒体设备失败");
     }
 
     if (navigator.mediaDevices.getUserMedia || navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia) {
@@ -403,34 +395,38 @@
     }
 
 
-    function fsubmit() {
-        var data = new FormData($('#formData')[0]);
-        $.ajax({
-            url: '/supermanager/closure',
-            type: 'POST',
-            data: data,
-            dataType: 'JSON',
-            cache: false,
-            processData: false,
-            contentType: false
-        }).done(function (ret) {
+    $("button").click(function(){
+        var s;
+        if($(this).attr("id") == "ebt"){
+            s = 0;
+            $(this).removeClass("btn-info")
+            $(this).addClass("btn-warning")
+            $("#sbt").removeClass("btn-warning")
+            $("#sbt").addClass("btn-info")
+        }else if($(this).attr("id") == "sbt"){
+            s = 1;
+            $(this).removeClass("btn-info")
+            $(this).addClass("btn-warning")
+            $("#ebt").removeClass("btn-warning")
+            $("#ebt").addClass("btn-info")
+        }
+        if("${room.createrId}" === "${sessionScope.user.userId}" ){
             $.ajax({
                 type: "POST",
-                url: "/anchor/change",
-                dataType: "json",
-                data: "roomId=${room.id}&state=" + 0,
-                success: function (data) {
-                    layer.open({
-                        title: "信息",
-                        content: data.message,
-                    });
-                    // alert(data.message);
+                url: "/liveShow/teach",
+                dataType:"json",
+                data: "classId=${room.id}&state="+s,
+                success: function(data){
+                    if (data.message != null ) {
+                        layer.open({
+                            title: "信息",
+                            content: data.message,
+                        });
+                    }
                 }
             });
-
-        });
-        return false;
-    }
+        }
+    })
 </script>
 </body>
 </html>

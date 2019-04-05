@@ -1,7 +1,6 @@
 package org.liveshow.entity;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class LearnRecordExample {
@@ -305,52 +304,62 @@ public class LearnRecordExample {
             return (Criteria) this;
         }
 
-        public Criteria andGmtInEqualTo(Date value) {
+        public Criteria andGmtInEqualTo(String value) {
             addCriterion("gmt_in =", value, "gmtIn");
             return (Criteria) this;
         }
 
-        public Criteria andGmtInNotEqualTo(Date value) {
+        public Criteria andGmtInNotEqualTo(String value) {
             addCriterion("gmt_in <>", value, "gmtIn");
             return (Criteria) this;
         }
 
-        public Criteria andGmtInGreaterThan(Date value) {
+        public Criteria andGmtInGreaterThan(String value) {
             addCriterion("gmt_in >", value, "gmtIn");
             return (Criteria) this;
         }
 
-        public Criteria andGmtInGreaterThanOrEqualTo(Date value) {
+        public Criteria andGmtInGreaterThanOrEqualTo(String value) {
             addCriterion("gmt_in >=", value, "gmtIn");
             return (Criteria) this;
         }
 
-        public Criteria andGmtInLessThan(Date value) {
+        public Criteria andGmtInLessThan(String value) {
             addCriterion("gmt_in <", value, "gmtIn");
             return (Criteria) this;
         }
 
-        public Criteria andGmtInLessThanOrEqualTo(Date value) {
+        public Criteria andGmtInLessThanOrEqualTo(String value) {
             addCriterion("gmt_in <=", value, "gmtIn");
             return (Criteria) this;
         }
 
-        public Criteria andGmtInIn(List<Date> values) {
+        public Criteria andGmtInLike(String value) {
+            addCriterion("gmt_in like", value, "gmtIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andGmtInNotLike(String value) {
+            addCriterion("gmt_in not like", value, "gmtIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andGmtInIn(List<String> values) {
             addCriterion("gmt_in in", values, "gmtIn");
             return (Criteria) this;
         }
 
-        public Criteria andGmtInNotIn(List<Date> values) {
+        public Criteria andGmtInNotIn(List<String> values) {
             addCriterion("gmt_in not in", values, "gmtIn");
             return (Criteria) this;
         }
 
-        public Criteria andGmtInBetween(Date value1, Date value2) {
+        public Criteria andGmtInBetween(String value1, String value2) {
             addCriterion("gmt_in between", value1, value2, "gmtIn");
             return (Criteria) this;
         }
 
-        public Criteria andGmtInNotBetween(Date value1, Date value2) {
+        public Criteria andGmtInNotBetween(String value1, String value2) {
             addCriterion("gmt_in not between", value1, value2, "gmtIn");
             return (Criteria) this;
         }
@@ -365,52 +374,62 @@ public class LearnRecordExample {
             return (Criteria) this;
         }
 
-        public Criteria andGmtOutEqualTo(Date value) {
+        public Criteria andGmtOutEqualTo(String value) {
             addCriterion("gmt_out =", value, "gmtOut");
             return (Criteria) this;
         }
 
-        public Criteria andGmtOutNotEqualTo(Date value) {
+        public Criteria andGmtOutNotEqualTo(String value) {
             addCriterion("gmt_out <>", value, "gmtOut");
             return (Criteria) this;
         }
 
-        public Criteria andGmtOutGreaterThan(Date value) {
+        public Criteria andGmtOutGreaterThan(String value) {
             addCriterion("gmt_out >", value, "gmtOut");
             return (Criteria) this;
         }
 
-        public Criteria andGmtOutGreaterThanOrEqualTo(Date value) {
+        public Criteria andGmtOutGreaterThanOrEqualTo(String value) {
             addCriterion("gmt_out >=", value, "gmtOut");
             return (Criteria) this;
         }
 
-        public Criteria andGmtOutLessThan(Date value) {
+        public Criteria andGmtOutLessThan(String value) {
             addCriterion("gmt_out <", value, "gmtOut");
             return (Criteria) this;
         }
 
-        public Criteria andGmtOutLessThanOrEqualTo(Date value) {
+        public Criteria andGmtOutLessThanOrEqualTo(String value) {
             addCriterion("gmt_out <=", value, "gmtOut");
             return (Criteria) this;
         }
 
-        public Criteria andGmtOutIn(List<Date> values) {
+        public Criteria andGmtOutLike(String value) {
+            addCriterion("gmt_out like", value, "gmtOut");
+            return (Criteria) this;
+        }
+
+        public Criteria andGmtOutNotLike(String value) {
+            addCriterion("gmt_out not like", value, "gmtOut");
+            return (Criteria) this;
+        }
+
+        public Criteria andGmtOutIn(List<String> values) {
             addCriterion("gmt_out in", values, "gmtOut");
             return (Criteria) this;
         }
 
-        public Criteria andGmtOutNotIn(List<Date> values) {
+        public Criteria andGmtOutNotIn(List<String> values) {
             addCriterion("gmt_out not in", values, "gmtOut");
             return (Criteria) this;
         }
 
-        public Criteria andGmtOutBetween(Date value1, Date value2) {
+        public Criteria andGmtOutBetween(String value1, String value2) {
             addCriterion("gmt_out between", value1, value2, "gmtOut");
             return (Criteria) this;
         }
 
-        public Criteria andGmtOutNotBetween(Date value1, Date value2) {
+        public Criteria andGmtOutNotBetween(String value1, String value2) {
             addCriterion("gmt_out not between", value1, value2, "gmtOut");
             return (Criteria) this;
         }

@@ -5,8 +5,8 @@
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="class_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
-      <arg column="gmt_start" jdbcType="TIMESTAMP" javaType="java.util.Date" />
-      <arg column="gmt_end" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="gmt_start" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="gmt_end" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="class_num" jdbcType="INTEGER" javaType="java.lang.Integer" />
     </constructor>
   </resultMap>
@@ -104,8 +104,8 @@
   <insert id="insert" parameterType="org.liveshow.entity.TeahRecor" >
     insert into teah_recor (id, class_id, gmt_start, 
       gmt_end, class_num)
-    values (#{id,jdbcType=INTEGER}, #{classId,jdbcType=INTEGER}, #{gmtStart,jdbcType=TIMESTAMP}, 
-      #{gmtEnd,jdbcType=TIMESTAMP}, #{classNum,jdbcType=INTEGER})
+    values (#{id,jdbcType=INTEGER}, #{classId,jdbcType=INTEGER}, #{gmtStart,jdbcType=VARCHAR}, 
+      #{gmtEnd,jdbcType=VARCHAR}, #{classNum,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="org.liveshow.entity.TeahRecor" >
     insert into teah_recor
@@ -134,10 +134,10 @@
         #{classId,jdbcType=INTEGER},
       </if>
       <if test="gmtStart != null" >
-        #{gmtStart,jdbcType=TIMESTAMP},
+        #{gmtStart,jdbcType=VARCHAR},
       </if>
       <if test="gmtEnd != null" >
-        #{gmtEnd,jdbcType=TIMESTAMP},
+        #{gmtEnd,jdbcType=VARCHAR},
       </if>
       <if test="classNum != null" >
         #{classNum,jdbcType=INTEGER},
@@ -160,10 +160,10 @@
         class_id = #{record.classId,jdbcType=INTEGER},
       </if>
       <if test="record.gmtStart != null" >
-        gmt_start = #{record.gmtStart,jdbcType=TIMESTAMP},
+        gmt_start = #{record.gmtStart,jdbcType=VARCHAR},
       </if>
       <if test="record.gmtEnd != null" >
-        gmt_end = #{record.gmtEnd,jdbcType=TIMESTAMP},
+        gmt_end = #{record.gmtEnd,jdbcType=VARCHAR},
       </if>
       <if test="record.classNum != null" >
         class_num = #{record.classNum,jdbcType=INTEGER},
@@ -177,8 +177,8 @@
     update teah_recor
     set id = #{record.id,jdbcType=INTEGER},
       class_id = #{record.classId,jdbcType=INTEGER},
-      gmt_start = #{record.gmtStart,jdbcType=TIMESTAMP},
-      gmt_end = #{record.gmtEnd,jdbcType=TIMESTAMP},
+      gmt_start = #{record.gmtStart,jdbcType=VARCHAR},
+      gmt_end = #{record.gmtEnd,jdbcType=VARCHAR},
       class_num = #{record.classNum,jdbcType=INTEGER}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -191,10 +191,10 @@
         class_id = #{classId,jdbcType=INTEGER},
       </if>
       <if test="gmtStart != null" >
-        gmt_start = #{gmtStart,jdbcType=TIMESTAMP},
+        gmt_start = #{gmtStart,jdbcType=VARCHAR},
       </if>
       <if test="gmtEnd != null" >
-        gmt_end = #{gmtEnd,jdbcType=TIMESTAMP},
+        gmt_end = #{gmtEnd,jdbcType=VARCHAR},
       </if>
       <if test="classNum != null" >
         class_num = #{classNum,jdbcType=INTEGER},
@@ -205,8 +205,8 @@
   <update id="updateByPrimaryKey" parameterType="org.liveshow.entity.TeahRecor" >
     update teah_recor
     set class_id = #{classId,jdbcType=INTEGER},
-      gmt_start = #{gmtStart,jdbcType=TIMESTAMP},
-      gmt_end = #{gmtEnd,jdbcType=TIMESTAMP},
+      gmt_start = #{gmtStart,jdbcType=VARCHAR},
+      gmt_end = #{gmtEnd,jdbcType=VARCHAR},
       class_num = #{classNum,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
