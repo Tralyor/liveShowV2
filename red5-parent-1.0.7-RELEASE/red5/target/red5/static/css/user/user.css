@@ -1,0 +1,284 @@
+/* 页面的布局 */
+.page-header
+{
+    padding-bottom: 0px;
+}
+
+.page-header div
+{
+    width: 14%;
+    padding-bottom: 9px;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 3px solid #000000;
+}
+
+/* 侧边栏 */
+.user-side-ul
+{
+    border-top: 1px solid #eee;
+}
+
+.user-side-ul li
+{
+    display: block;
+}
+
+.user-side-ul li a
+{
+    position: relative;
+    display: block;
+    padding: 13px 0px;
+    padding-left: 16px;
+    color: #555555;
+    height: 49px;
+    line-height: 22px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-side-ul li a.li-children
+{
+    padding: 0px;
+    padding-left: 16px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.user-side-ul li a:hover
+{
+    color: #337ab7;
+}
+
+.user-side-ul li a.clicked,
+.user-side-ul li a.clicked:hover
+{
+    color: #000000;
+    background-color: #337ab7;
+}
+
+/* 个人资料页面部分 */
+.user-info
+{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.user-info .user-info-pic
+{
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.user-info .user-info-pic .user-info-pic-btn
+{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.user-info .user-info-pic img
+{
+    width: 140px;
+    height: 140px;
+}
+
+.user-info .user-info-name
+{
+    position: absolute;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.user-info .user-info-name .user-name
+{
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.user-setting
+{
+    position: relative;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.user-setting .user-setting-word
+{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.user-setting .user-setting-word h3
+{
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+/* .user-setting .user-setting-btn */
+.user-setting a
+{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+
+/* 用户关注 */
+.user-following-main
+{
+    /* display: inline-block; */
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.user-following-main .user-following
+{
+    float: left;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 48%;
+    height: 120px;
+    background-color: #f7f7f7;
+    /* border-bottom: 1px solid #eee; */
+}
+
+.user-following-main .user-following:nth-child(2n - 1)
+{
+	margin-right: 5px;
+}
+
+.user-following-main .user-following:nth-child(2n)
+{
+	margin-left: 5px;
+}
+
+.user-following-container
+{
+    float: left;
+    padding: 5px;;
+}
+
+.user-following-container .user-following-left,
+.user-following-container .user-following-right
+{
+    display: inline-block;
+    float: left;
+}
+
+.user-following-container .user-following-left
+{
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+.user-following-container .user-following-right
+{
+    padding-left: 5px;
+	padding-top: 5px;
+}
+
+.user-following-right .user-following-title
+{
+    margin-bottom: 10px;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.user-following-title a:hover
+{
+    color: #FEA01E;
+}
+
+.user-following-right .user-following-name,
+.user-following-right .user-following-state
+{
+    font-size: 12px;
+}
+
+.user-following-right .user-following-type
+{
+    position: relative;
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+.user-following-right .user-following-type a
+{
+    color: #F76300;
+}
+
+.user-following-right .user-following-type a.user-following-unfollowing
+{
+    position: absolute;
+    right: 5px;
+    display: none;
+}
+
+.user-following:hover a.user-following-unfollowing
+{
+    display: inline;
+}
+
+/* 直播设置 */
+ol.class-detail
+{
+    margin: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+ol.class-detail li
+{
+    display: inline;
+}
+
+ol.class-detail li + li::before
+{
+    padding: 0px 5px 0px 2px;
+    content: ">";
+}
+
+/* 直播设置 > 添加管理员 */
+.user-header
+{
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.user-header .user-header-tit
+{
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 25px;
+    float: left;
+}
+
+.user-header .user-header-add
+{
+    float: right;
+}
+
+
+/* 实名认证 */
+.thumbnail .caption
+{
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.thumbnail img
+{
+	width: 227px;
+	height: 130px;
+}

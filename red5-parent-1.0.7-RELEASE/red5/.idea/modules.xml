@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:/Software/studyTest/20171019Hibernate/hibernate.iml" filepath="D:/Software/studyTest/20171019Hibernate/hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/red5.iml" filepath="$PROJECT_DIR$/red5.iml" />
+    </modules>
+  </component>
+</project>

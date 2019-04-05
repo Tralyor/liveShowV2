@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="red5:war">
+    <output-path>$PROJECT_DIR$/red5/target</output-path>
+    <root id="archive" name="red5.war">
+      <element id="artifact" artifact-name="red5:war exploded" />
+    </root>
+  </artifact>
+</component>

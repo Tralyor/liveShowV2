@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/dao/ClassCommentMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/dao/DanmakuMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/dao/LearnRecordMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/dao/TclassMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/dao/TeahRecorMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/dao/TuserMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/dao/UserClassMappingMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/ClassComment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/ClassCommentExample.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/Danmaku.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/DanmakuExample.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/LearnRecord.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/LearnRecordExample.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/Tclass.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/TclassExample.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/TeahRecor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/TeahRecorExample.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/Tuser.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/TuserExample.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/UserClassMapping.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/UserClassMappingExample.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/ClassCommentMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/DanmakuMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/LearnRecordMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/TclassMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/TeahRecorMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/TuserMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/UserClassMappingMapper.xml" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

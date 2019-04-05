@@ -1,0 +1,101 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="red5:war exploded">
+    <output-path>$PROJECT_DIR$/red5/target/red5</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="red5" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.maven.plugins:maven-resources-plugin:2.4.3" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-api:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-project:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-profile:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact-manager:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-registry:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-core:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven.wagon:wagon-file:1.0-beta-2" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-parameter-documenter:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven.wagon:wagon-http-lightweight:1.0-beta-2" />
+          <element id="library" level="project" name="Maven: org.apache.maven.wagon:wagon-http-shared:1.0-beta-2" />
+          <element id="library" level="project" name="Maven: jtidy:jtidy:4aug2000r7-dev" />
+          <element id="library" level="project" name="Maven: org.apache.maven.reporting:maven-reporting-api:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven.doxia:doxia-sink-api:1.0-alpha-7" />
+          <element id="library" level="project" name="Maven: org.apache.maven.wagon:wagon-provider-api:1.0-beta-2" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-repository-metadata:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-error-diagnostics:2.0.6" />
+          <element id="library" level="project" name="Maven: commons-cli:commons-cli:1.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven.wagon:wagon-ssh-external:1.0-beta-2" />
+          <element id="library" level="project" name="Maven: org.apache.maven.wagon:wagon-ssh-common:1.0-beta-2" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-descriptor:2.0.6" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-interactivity-api:1.0-alpha-4" />
+          <element id="library" level="project" name="Maven: org.apache.maven.wagon:wagon-ssh:1.0-beta-2" />
+          <element id="library" level="project" name="Maven: com.jcraft:jsch:0.1.27" />
+          <element id="library" level="project" name="Maven: classworlds:classworlds:1.1" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-settings:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-model:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-monitor:2.0.6" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-utils:2.0.5" />
+          <element id="library" level="project" name="Maven: org.apache.maven.shared:maven-filtering:1.0-beta-4" />
+          <element id="library" level="project" name="Maven: org.sonatype.plexus:plexus-build-api:0.0.4" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-interpolation:1.13" />
+          <element id="library" level="project" name="Maven: org.red5:red5-server:1.0.7-RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-access:1.1.6" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.18" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.18" />
+          <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.7.18" />
+          <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:1.7.18" />
+          <element id="library" level="project" name="Maven: uk.org.lidalia:sysout-over-slf4j:1.0.2" />
+          <element id="library" level="project" name="Maven: org.apache.mina:mina-integration-beans:2.0.13" />
+          <element id="library" level="project" name="Maven: org.apache.mina:mina-core:bundle:2.0.13" />
+          <element id="library" level="project" name="Maven: org.quartz-scheduler:quartz:2.2.2" />
+          <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.1" />
+          <element id="library" level="project" name="Maven: commons-daemon:commons-daemon:1.0.15" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.54" />
+          <element id="library" level="project" name="Maven: org.apache.mina:mina-integration-beans:bundle:2.0.13" />
+          <element id="library" level="project" name="Maven: org.apache.mina:mina-integration-jmx:bundle:2.0.13" />
+          <element id="library" level="project" name="Maven: ognl:ognl:3.1.2" />
+          <element id="library" level="project" name="Maven: javassist:javassist:3.11.0.GA" />
+          <element id="library" level="project" name="Maven: org.apache.tika:tika-core:1.11" />
+          <element id="library" level="project" name="Maven: org.apache.tika:tika-parsers:1.11" />
+          <element id="library" level="project" name="Maven: org.apache.james:apache-mime4j-core:0.7.2" />
+          <element id="library" level="project" name="Maven: org.apache.james:apache-mime4j-dom:0.7.2" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-compress:1.10" />
+          <element id="library" level="project" name="Maven: org.ccil.cowan.tagsoup:tagsoup:1.2.1" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm:5.0.4" />
+          <element id="library" level="project" name="Maven: com.drewnoakes:metadata-extractor:2.8.0" />
+          <element id="library" level="project" name="Maven: com.adobe.xmp:xmpcore:5.1.2" />
+          <element id="library" level="project" name="Maven: de.l3s.boilerpipe:boilerpipe:1.1.0" />
+          <element id="library" level="project" name="Maven: com.googlecode.juniversalchardet:juniversalchardet:1.0.3" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.2" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.4" />
+          <element id="library" level="project" name="Maven: xerces:xercesImpl:2.11.0" />
+          <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.4.01" />
+          <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.6.11" />
+          <element id="library" level="project" name="Maven: com.googlecode.mp4parser:isoparser:1.1.17" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/red5/target/red5/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="red5/web/Web" />
+    </root>
+  </artifact>
+</component>

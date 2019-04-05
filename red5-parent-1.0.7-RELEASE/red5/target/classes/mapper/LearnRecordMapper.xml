@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.liveshow.dao.LearnRecordMapper" >
+  <resultMap id="BaseResultMap" type="org.liveshow.entity.LearnRecord" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_id" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="record_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="gmt_in" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="gmt_out" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="face_rego_count" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="face_rego_success" jdbcType="INTEGER" javaType="java.lang.Integer" />
+    </constructor>
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, user_id, record_id, gmt_in, gmt_out, face_rego_count, face_rego_success
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="org.liveshow.entity.LearnRecordExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from learn_record
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from learn_record
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from learn_record
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="org.liveshow.entity.LearnRecordExample" >
+    delete from learn_record
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="org.liveshow.entity.LearnRecord" >
+    insert into learn_record (id, user_id, record_id, 
+      gmt_in, gmt_out, face_rego_count, 
+      face_rego_success)
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{recordId,jdbcType=INTEGER}, 
+      #{gmtIn,jdbcType=TIMESTAMP}, #{gmtOut,jdbcType=TIMESTAMP}, #{faceRegoCount,jdbcType=INTEGER}, 
+      #{faceRegoSuccess,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="org.liveshow.entity.LearnRecord" >
+    insert into learn_record
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="recordId != null" >
+        record_id,
+      </if>
+      <if test="gmtIn != null" >
+        gmt_in,
+      </if>
+      <if test="gmtOut != null" >
+        gmt_out,
+      </if>
+      <if test="faceRegoCount != null" >
+        face_rego_count,
+      </if>
+      <if test="faceRegoSuccess != null" >
+        face_rego_success,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="recordId != null" >
+        #{recordId,jdbcType=INTEGER},
+      </if>
+      <if test="gmtIn != null" >
+        #{gmtIn,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmtOut != null" >
+        #{gmtOut,jdbcType=TIMESTAMP},
+      </if>
+      <if test="faceRegoCount != null" >
+        #{faceRegoCount,jdbcType=INTEGER},
+      </if>
+      <if test="faceRegoSuccess != null" >
+        #{faceRegoSuccess,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="org.liveshow.entity.LearnRecordExample" resultType="java.lang.Integer" >
+    select count(*) from learn_record
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update learn_record
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.userId != null" >
+        user_id = #{record.userId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recordId != null" >
+        record_id = #{record.recordId,jdbcType=INTEGER},
+      </if>
+      <if test="record.gmtIn != null" >
+        gmt_in = #{record.gmtIn,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.gmtOut != null" >
+        gmt_out = #{record.gmtOut,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.faceRegoCount != null" >
+        face_rego_count = #{record.faceRegoCount,jdbcType=INTEGER},
+      </if>
+      <if test="record.faceRegoSuccess != null" >
+        face_rego_success = #{record.faceRegoSuccess,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update learn_record
+    set id = #{record.id,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=VARCHAR},
+      record_id = #{record.recordId,jdbcType=INTEGER},
+      gmt_in = #{record.gmtIn,jdbcType=TIMESTAMP},
+      gmt_out = #{record.gmtOut,jdbcType=TIMESTAMP},
+      face_rego_count = #{record.faceRegoCount,jdbcType=INTEGER},
+      face_rego_success = #{record.faceRegoSuccess,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="org.liveshow.entity.LearnRecord" >
+    update learn_record
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="recordId != null" >
+        record_id = #{recordId,jdbcType=INTEGER},
+      </if>
+      <if test="gmtIn != null" >
+        gmt_in = #{gmtIn,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmtOut != null" >
+        gmt_out = #{gmtOut,jdbcType=TIMESTAMP},
+      </if>
+      <if test="faceRegoCount != null" >
+        face_rego_count = #{faceRegoCount,jdbcType=INTEGER},
+      </if>
+      <if test="faceRegoSuccess != null" >
+        face_rego_success = #{faceRegoSuccess,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.liveshow.entity.LearnRecord" >
+    update learn_record
+    set user_id = #{userId,jdbcType=VARCHAR},
+      record_id = #{recordId,jdbcType=INTEGER},
+      gmt_in = #{gmtIn,jdbcType=TIMESTAMP},
+      gmt_out = #{gmtOut,jdbcType=TIMESTAMP},
+      face_rego_count = #{faceRegoCount,jdbcType=INTEGER},
+      face_rego_success = #{faceRegoSuccess,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

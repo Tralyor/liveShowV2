@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javadocOptions>
+  <tags>
+    <tag>
+      <name>todo</name>
+      <head>To do:</head>
+    </tag>
+  </tags>
+  <docletArtifacts>
+    <docletArtifact />
+  </docletArtifacts>
+  <tagletArtifacts>
+    <tagletArtifact />
+  </tagletArtifacts>
+  <links>
+    <link>http://download.oracle.com/javase/7/docs/api</link>
+    <link>http://docs.spring.io/spring/docs/4.0.3.RELEASE/javadoc-api</link>
+    <link>http://www.slf4j.org/api</link>
+    <link>http://logging.apache.org/log4j/1.2/apidocs</link>
+  </links>
+  <javadocResourcesDirectory>src/main/javadoc</javadocResourcesDirectory>
+</javadocOptions>

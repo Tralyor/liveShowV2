@@ -1,0 +1,2178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="red5:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="806a9eb6-3428-4d2d-8612-d4ad3b668fa1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/log/red5.log" afterPath="$PROJECT_DIR$/log/red5.log" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/red5.iml" afterPath="$PROJECT_DIR$/red5.iml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/bean/InitBean.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/bean/RoomHeat.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/bean/UserAndRoom.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/chat/WebScoket.java" afterPath="$PROJECT_DIR$/src/main/java/org/liveshow/chat/WebScoket.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/chat/content/ChatContent.java" afterPath="$PROJECT_DIR$/src/main/java/org/liveshow/chat/content/ChatContent.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/chat/content/DarkChatContent.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/chat/content/DarkRoomContent.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/chat/content/GetHttpSessionConfigurator.java" afterPath="$PROJECT_DIR$/src/main/java/org/liveshow/chat/content/GetHttpSessionConfigurator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/AdminController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/AnchorController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/DanmakuController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/DirectoryController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/IndexController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/LiveShowController.java" afterPath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/LiveShowController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/ModuleManageController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/OverviewController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/PartManageController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/PerformanceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/PersonController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/RecommendModuleController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/SuperManagerController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/controller/UserController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/AnchorMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/ApplicationMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/CareMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/DanmakuMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/DarkroomDanmakuMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/DarkroomRoomMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/LiveRecordMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/ModuleMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/PartMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/RecommendHomeMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/RecommendModuleMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/RoomMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/SupermanagerMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dao/UserMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/PersonalApplicationDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/PersonalChangePasswordDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/PersonalFollowingDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/PersonalLiveRecordDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/PersonalLiveSettingDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/PersonalLiveSettingModuleDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/PersonalLiveSettingPartDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/PersonalMuteDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/PersonalProfileDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/Show.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/SuperManagerDarkroomRoomDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/manager/DarkroomByDateDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/manager/DarkroomByModuleDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/manager/ModuleDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/manager/MuteByDateDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/manager/MuteDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/manager/RoomMuteDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/dto/manager/SuperManagerDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/Anchor.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/AnchorExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/Application.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/ApplicationExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/Care.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CareExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/AnchorInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/ApplicationInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/CardState.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/DarkRoomInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/ManagerDarkroomDanma.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/ManagerDarkroomNumByDate.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/ManagerDarkroomNumByModule.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/ManagerDarkroomRoom.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/RecommendModulAndInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/RecommendModulePresent.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/RoomAndOwner.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/CombinationEntity/SuperManagerWithPerformance.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/Danmaku.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/DanmakuExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/DarkroomDanmaku.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/DarkroomDanmakuExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/DarkroomRoom.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/DarkroomRoomExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/LiveRecord.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/LiveRecordExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/Module.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/ModuleExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/Part.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/PartExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/RecommendHome.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/RecommendHomeExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/RecommendModule.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/RecommendModuleExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/Room.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/RoomExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/Supermanager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/SupermanagerExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/User.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/entity/UserExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/AnchorService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/ApplicationService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/CareService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/DanmakuService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/DarkroomDanmakuService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/DarkroomRoomService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/LiveRecordService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/ModuleService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/PartService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/RecommendHomeService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/RecommendModuleService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/RoomService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/SupermanagerService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/UserService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/AnchorServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/ApplicationServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/CareServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/DanmakuServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/DarkroomDanmakuServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/DarkroomRoomServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/LiveRecordServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/ModuleServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/PartServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/RecommendHomeServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/RecommendModuleServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/RoomeServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/SupermanagerServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/UserServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ChatResolver.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ContentResolver.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/DarkDanmakuResolver.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/DarkRoomResolver.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ResolverFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ShowStateResolver.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/liveshow/surveillant/RoomPopularity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AnchorMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CareMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DanmakuMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DarkroomDanmakuMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DarkroomRoomMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/LiveRecordMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ModuleMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PartMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RecommendHomeMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RecommendModuleMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RoomMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SupermanagerMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/red5.properties" afterPath="$PROJECT_DIR$/src/main/resources/red5.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/resources-foot.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/resources-foot.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/topNav.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/topNav.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/show/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/show/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/show/liveShow.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/show/liveShow.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/user/liveshow.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/liveshow.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/config/rtmpConfig.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/config/rtmpConfig.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/user/common.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/common.js" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/dao/ApplicationMapperTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/dao/DarkroomDanmakuMapperTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/dao/DarkroomRoomMapperTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/dao/LiveRecordMapperTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/dao/PartMapperTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/dao/RoomMapperTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/dao/SupermanagerMapperTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/dao/UserMapperTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/serice/impl/CareServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/serice/impl/DanmakuServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/serice/impl/DarkRoomDanmakuImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/serice/impl/DarkroomRoomServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/serice/impl/LiveRecordServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/serice/impl/ModuleServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/serice/impl/PartServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/serice/impl/RecommendHomeServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/serice/impl/RecommendModuleServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/serice/impl/RoomServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/service/impl/DarkroomDanmakuServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/service/impl/RoomeServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/service/impl/SupermanagerServiceImplTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/liveshow/service/impl/UserServiceImplTest.java" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../../../../studyTest/20171019Hibernate/target/" />
+    <ignored path="$PROJECT_DIR$/../../../../studyTest/test3/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/red5$DanmakuServiceImplTest_addDanmaku.coverage" NAME="DanmakuServiceImplTest.addDanmaku Coverage Results" MODIFIED="1512183767666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.liveshow.serice.impl.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="red5" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="liveShow.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/show/liveShow.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="148" column="29" lean-forward="false" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1554432131376" expanded="true" signature="9595:9601" ph="&amp;nbsp;" />
+                <marker date="1554432131376" expanded="true" signature="9601:9607" ph="&amp;nbsp;" />
+                <marker date="1554432131376" expanded="true" signature="9607:9613" ph="&amp;nbsp;" />
+                <marker date="1554432131376" expanded="true" signature="9613:9619" ph="&amp;nbsp;" />
+                <marker date="1554432131376" expanded="true" signature="9620:9626" ph="&amp;nbsp;" />
+                <marker date="1554432131376" expanded="true" signature="9626:9632" ph="&amp;nbsp;" />
+                <marker date="1554432131376" expanded="true" signature="9632:9638" ph="&amp;nbsp;" />
+                <marker date="1554432131376" expanded="true" signature="9638:9644" ph="&amp;nbsp;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FaceRecoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/controller/FaceRecoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebScoket.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/chat/WebScoket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeahRecor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/TeahRecor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LearnRecord.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/LearnRecord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LearnRecordService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/LearnRecordService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/face/AuthService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-937">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FaceRecoUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/face/FaceRecoUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/face/FileUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1379">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatResolver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ChatResolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Jsp File" />
+        <option value="Kotlin File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>, endTime</find>
+      <find>endTime</find>
+      <find>直播状</find>
+      <find>username</find>
+      <find>button</find>
+      <find>isDark</find>
+      <find>liveSettin</find>
+      <find>All</find>
+      <find>InitBean</find>
+      <find>index</find>
+      <find>2</find>
+      <find>loginA</find>
+      <find>注册</find>
+      <find>register</find>
+      <find>loginDiv</find>
+      <find>AllInterceptor</find>
+      <find>&lt;mvc:</find>
+      <find>user-pic</find>
+      <find>user-</find>
+      <find>sessi</find>
+      <find>sessionScope</find>
+      <find>streamCode</find>
+      <find>sendBarrage</find>
+      <find>nickN</find>
+      <find>&lt;/script&gt;</find>
+      <find>playBody</find>
+      <find>state</find>
+      <find>insert</find>
+      <find>login</find>
+      <find>video</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/RoomMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/DarkroomDanmakuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DarkroomDanmakuMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager/blockadeVisitor.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/person/liveSetting.jsp" />
+        <option value="$PROJECT_DIR$/../../../../../../nginx-1.13.9/conf/nginx.conf" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/dao/UserClassMappingMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/dao/DanmakuMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/surveillant/RoomPopularity.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/user/common.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/resources-foot.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/topNav.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/controller/LiveShowController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/red5.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/UserClassMapping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/TClassService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/UserClassMappingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/UserClassMappingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/dto/Show.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/TClassServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/show/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/controller/TeachShowController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/user/liveshow.css" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ContentResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ResolverFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/DanmakuService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ChatResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/config/rtmpConfig.js" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/chat/content/GetHttpSessionConfigurator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/chat/content/ChatContent.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/liveShow.js" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/DanmakuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DanmakuMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/show/liveShow.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/face/FileUtil.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/face/BdTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/face/faceRecoUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/controller/FaceRecoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/face/FaceRecoUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/chat/WebScoket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/liveshow/service/LearnRecordService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="C:\workspace\java\Software\maven\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="red5 Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="red5 Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="red5 Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="red5 Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="377" />
+    <option name="width" value="1441" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="liveshow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="liveshow" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="liveshow" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="liveshow" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="liveshow" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="red5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="red5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="liveshow" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../study/test" />
+    <property name="SearchEverywhereHistoryKey" value="Tuser&#9;FILE&#9;file://C:/workspace/java/Software/testProject/liveshow2/red5-parent-1.0.7-RELEASE/red5/src/main/java/org/liveshow/entity/Tuser.java&#10;Web&#9;FILE&#9;file://C:/workspace/java/Software/testProject/liveshow2/red5-parent-1.0.7-RELEASE/red5/src/main/java/org/liveshow/chat/WebScoket.java&#10;config&#9;FILE&#9;file://C:/workspace/java/Software/testProject/liveshow2/red5-parent-1.0.7-RELEASE/red5/src/main/webapp/static/js/config/rtmpConfig.js&#10;common&#9;FILE&#9;file://C:/workspace/java/Software/testProject/liveshow2/red5-parent-1.0.7-RELEASE/red5/src/main/webapp/static/js/user/common.js&#10;TClassService&#9;FILE&#9;file://C:/workspace/java/Software/testProject/liveshow2/red5-parent-1.0.7-RELEASE/red5/src/main/java/org/liveshow/service/impl/TClassServiceImpl.java&#10;UserClassMapping&#9;FILE&#9;file://C:/workspace/java/Software/testProject/liveshow2/red5-parent-1.0.7-RELEASE/red5/src/main/java/org/liveshow/service/UserClassMapping.java&#10;default&#9;FILE&#9;file://D:/Software/testProject/red5 1.0.7整合tomcat6+maven+oflaDemo/red5-parent-1.0.7-RELEASE/red5/src/main/resources/defaultContext.xml&#10;beanRefContext&#9;FILE&#9;file://D:/Software/testProject/red5 1.0.7整合tomcat6+maven+oflaDemo/red5-parent-1.0.7-RELEASE/red5/src/main/resources/beanRefContext.xml" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\java\Software\testProject\liveshow2\red5-parent-1.0.7-RELEASE\red5\src\main\java\org\liveshow\face" />
+      <recent name="C:\workspace\java\Software\testProject\liveshow2\red5-parent-1.0.7-RELEASE\red5\src\main\resources\mapper" />
+      <recent name="C:\workspace\java\Software\testProject\liveshow2\red5-parent-1.0.7-RELEASE\red5\src\main\java\org\liveshow\entity" />
+      <recent name="C:\workspace\java\Software\testProject\liveshow2\red5-parent-1.0.7-RELEASE\red5\src\main\java\org\liveshow\dao" />
+      <recent name="C:\workspace\java\Software\testProject\liveshow\red5-parent-1.0.7-RELEASE\red5\src\main\webapp\static\img" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.liveshow.dto" />
+      <recent name="org.liveshow.controller" />
+      <recent name="org.liveshow.interceptor" />
+      <recent name="org.liveshow.dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Software\testProject\liveshow\red5-parent-1.0.7-RELEASE\red5\src\main\webapp" />
+      <recent name="D:\Software\testProject\liveshow\red5-parent-1.0.7-RELEASE\red5\src\main\resources\spring" />
+      <recent name="D:\Software\testProject\liveshow\red5-parent-1.0.7-RELEASE\red5\.idea" />
+      <recent name="D:\Software\testProject\liveshow\red5-parent-1.0.7-RELEASE\red5\src\main\webapp\oflaDemo" />
+      <recent name="D:\Software\testProject\red5 1.0.7整合tomcat6+maven+oflaDemo\red5-parent-1.0.7-RELEASE\red5\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.tomcat1">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="UserClassMappingServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.liveshow.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.liveshow.service.impl.UserClassMappingServiceImpl" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="red5" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+    </configuration>
+    <configuration name="DarkRoomDanmakuImplTest.isDark" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.liveshow.serice.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="red5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.liveshow.serice.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.liveshow.serice.impl.DarkRoomDanmakuImplTest" />
+      <option name="METHOD_NAME" value="isDark" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="DarkroomRoomMapperTest.selectDarkRoomInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.liveshow.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="red5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.liveshow.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.liveshow.dao.DarkroomRoomMapperTest" />
+      <option name="METHOD_NAME" value="selectDarkRoomInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="RecommendModuleServiceImplTest.findRecoModule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.liveshow.serice.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="red5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.liveshow.serice.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.liveshow.serice.impl.RecommendModuleServiceImplTest" />
+      <option name="METHOD_NAME" value="findRecoModule" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="red5 [clean:clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean:clean" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="red5:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_red5" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59520" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="red5:war exploded" />
+          <artifact name="red5:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="tomcat1" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.38" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="red5:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_red5" />
+        <option name="JNDI_PORT" value="1100" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59520" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="red5:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="red5" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat1" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RecommendModuleServiceImplTest.findRecoModule" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DarkRoomDanmakuImplTest.isDark" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DarkroomRoomMapperTest.selectDarkRoomInfo" />
+      <item index="4" class="java.lang.String" itemvalue="Maven.red5 [clean:clean]" />
+      <item index="5" class="java.lang.String" itemvalue="Application.UserClassMappingServiceImpl" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.UserClassMappingServiceImpl" />
+        <item index="1" class="java.lang.String" itemvalue="Maven.red5 [clean:clean]" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DarkroomRoomMapperTest.selectDarkRoomInfo" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DarkRoomDanmakuImplTest.isDark" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RecommendModuleServiceImplTest.findRecoModule" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="806a9eb6-3428-4d2d-8612-d4ad3b668fa1" name="Default" comment="" />
+      <created>1508156133042</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1508156133042</updated>
+      <workItem from="1508156136185" duration="3785000" />
+      <workItem from="1508213840852" duration="3368000" />
+      <workItem from="1508218003789" duration="224000" />
+      <workItem from="1508218320810" duration="122000" />
+      <workItem from="1508219169217" duration="974000" />
+      <workItem from="1508220256565" duration="3132000" />
+      <workItem from="1508226742994" duration="6826000" />
+      <workItem from="1508324634717" duration="1124000" />
+      <workItem from="1508326497969" duration="8135000" />
+      <workItem from="1508376795672" duration="1303000" />
+      <workItem from="1508378219374" duration="677000" />
+      <workItem from="1509087269715" duration="2724000" />
+      <workItem from="1509243615506" duration="552000" />
+      <workItem from="1509253988094" duration="1914000" />
+      <workItem from="1509255964833" duration="33000" />
+      <workItem from="1509256575476" duration="1507000" />
+      <workItem from="1509343950266" duration="1824000" />
+      <workItem from="1509347712190" duration="2702000" />
+      <workItem from="1509351060853" duration="607000" />
+      <workItem from="1509352599180" duration="6746000" />
+      <workItem from="1509764994535" duration="10021000" />
+      <workItem from="1509783762423" duration="1302000" />
+      <workItem from="1509842466297" duration="14342000" />
+      <workItem from="1509863722324" duration="9903000" />
+      <workItem from="1509945777440" duration="2333000" />
+      <workItem from="1510027870728" duration="2639000" />
+      <workItem from="1510030602889" duration="6297000" />
+      <workItem from="1510192432887" duration="750000" />
+      <workItem from="1511159340796" duration="299000" />
+      <workItem from="1511159684338" duration="56000" />
+      <workItem from="1511159780683" duration="27000" />
+      <workItem from="1511159837240" duration="3530000" />
+      <workItem from="1511164577368" duration="2600000" />
+      <workItem from="1511174244502" duration="8180000" />
+      <workItem from="1511240711393" duration="9599000" />
+      <workItem from="1511261034286" duration="12933000" />
+      <workItem from="1511323237855" duration="1847000" />
+      <workItem from="1511346215287" duration="11524000" />
+      <workItem from="1511401220587" duration="16621000" />
+      <workItem from="1511436321632" duration="8218000" />
+      <workItem from="1511500093852" duration="51000" />
+      <workItem from="1511505652487" duration="14703000" />
+      <workItem from="1511526452614" duration="1866000" />
+      <workItem from="1511573529534" duration="12646000" />
+      <workItem from="1511757511568" duration="3175000" />
+      <workItem from="1511760836918" duration="13660000" />
+      <workItem from="1511848043046" duration="6374000" />
+      <workItem from="1511856000069" duration="44000" />
+      <workItem from="1511856682875" duration="10990000" />
+      <workItem from="1511944636894" duration="15209000" />
+      <workItem from="1512006942501" duration="20167000" />
+      <workItem from="1512037990385" duration="4401000" />
+      <workItem from="1512105318351" duration="1258000" />
+      <workItem from="1512127606620" duration="5839000" />
+      <workItem from="1512179777003" duration="10052000" />
+      <workItem from="1512194159179" duration="209000" />
+      <workItem from="1512268995893" duration="6918000" />
+      <workItem from="1512364533707" duration="20014000" />
+      <workItem from="1512450641395" duration="18863000" />
+      <workItem from="1512474366862" duration="3495000" />
+      <workItem from="1512524483165" duration="565000" />
+      <workItem from="1512533324693" duration="1879000" />
+      <workItem from="1512548374299" duration="18125000" />
+      <workItem from="1512608326143" duration="27607000" />
+      <workItem from="1512642616521" duration="555000" />
+      <workItem from="1512986568528" duration="673000" />
+      <workItem from="1513055121447" duration="1311000" />
+      <workItem from="1513330124295" duration="2263000" />
+      <workItem from="1513391917827" duration="14000" />
+      <workItem from="1513568320974" duration="4000" />
+      <workItem from="1513568399887" duration="3000" />
+      <workItem from="1513819914747" duration="6923000" />
+      <workItem from="1514007712687" duration="18000" />
+      <workItem from="1514008760322" duration="2746000" />
+      <workItem from="1514013226199" duration="622000" />
+      <workItem from="1514029403394" duration="1798000" />
+      <workItem from="1514033769686" duration="1755000" />
+      <workItem from="1514088445197" duration="869000" />
+      <workItem from="1514197581380" duration="2934000" />
+      <workItem from="1514203604898" duration="1421000" />
+      <workItem from="1514598173651" duration="848000" />
+      <workItem from="1514683666066" duration="4575000" />
+      <workItem from="1514697141516" duration="1033000" />
+      <workItem from="1514698280538" duration="12558000" />
+      <workItem from="1514723944356" duration="1494000" />
+      <workItem from="1514785207572" duration="22769000" />
+      <workItem from="1514853296041" duration="5183000" />
+      <workItem from="1515064881635" duration="691000" />
+      <workItem from="1515294099586" duration="631000" />
+      <workItem from="1515394417567" duration="385000" />
+      <workItem from="1516705969516" duration="551000" />
+      <workItem from="1517300406365" duration="1026000" />
+      <workItem from="1517368802054" duration="2455000" />
+      <workItem from="1517736206226" duration="498000" />
+      <workItem from="1517736900071" duration="2785000" />
+      <workItem from="1518153865199" duration="44000" />
+      <workItem from="1522552025306" duration="751000" />
+      <workItem from="1523364190392" duration="665000" />
+      <workItem from="1523402984909" duration="22000" />
+      <workItem from="1523937232058" duration="778000" />
+      <workItem from="1523938512737" duration="2630000" />
+      <workItem from="1554168518839" duration="19906000" />
+      <workItem from="1554344160125" duration="122000" />
+      <workItem from="1554344563235" duration="127000" />
+      <workItem from="1554345132549" duration="334000" />
+      <workItem from="1554345837629" duration="9351000" />
+      <workItem from="1554359917093" duration="12449000" />
+      <workItem from="1554426860655" duration="6888000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="DarkRoomDanmakuImplTest_add - 2017.12.02 at 13h 03m 59s.xml">
+      <configuration name="DarkRoomDanmakuImplTest.add" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DarkRoomDanmakuImplTest_isDark - 2017.12.05 at 16h 39m 42s.xml">
+      <configuration name="DarkRoomDanmakuImplTest.isDark" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DarkRoomDanmakuImplTest_isDark - 2017.12.05 at 16h 42m 34s.xml">
+      <configuration name="DarkRoomDanmakuImplTest.isDark" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DarkRoomDanmakuImplTest_isDark - 2017.12.05 at 16h 42m 49s.xml">
+      <configuration name="DarkRoomDanmakuImplTest.isDark" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DarkRoomDanmakuImplTest_isDark - 2017.12.06 at 20h 50m 57s.xml">
+      <configuration name="DarkRoomDanmakuImplTest.isDark" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DarkRoomDanmakuImplTest_isDark - 2017.12.06 at 20h 52m 57s.xml">
+      <configuration name="DarkRoomDanmakuImplTest.isDark" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DarkroomRoomMapperTest_selectDarkRoomInfo - 2018.01.01 at 19h 54m 26s.xml">
+      <configuration name="DarkroomRoomMapperTest.selectDarkRoomInfo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DarkroomRoomMapperTest_selectDarkRoomInfo - 2018.01.01 at 19h 55m 21s.xml">
+      <configuration name="DarkroomRoomMapperTest.selectDarkRoomInfo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecommendModuleServiceImplTest_findRecoModule - 2017.12.04 at 14h 30m 02s.xml">
+      <configuration name="RecommendModuleServiceImplTest.findRecoModule" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecommendModuleServiceImplTest_findRecoModule - 2017.12.04 at 14h 30m 16s.xml">
+      <configuration name="RecommendModuleServiceImplTest.findRecoModule" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="524841000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23734939" sideWeight="0.10195228" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650602" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23535791" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489154" sideWeight="0.49536425" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494577" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38072288" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7120482" sideWeight="0.4914163" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253012" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650602" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7072289" sideWeight="0.89804775" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650602" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48915663" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35303688" sideWeight="0.7692308" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489154" sideWeight="0.50463575" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489154" sideWeight="0.50463575" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5344262" sideWeight="0.36611196" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277027" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23600605" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24923313" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43442622" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14358108" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277027" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3704918" sideWeight="0.63388807" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277027" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277027" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31089258" sideWeight="0.7692308" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3464448" sideWeight="0.23076923" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277027" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/liveshow/dao/TeahRecorMapper.java</url>
+          <line>17</line>
+          <properties class="org.liveshow.dao.TeahRecorMapper" method="insertSelective">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/liveshow/controller/LiveShowController.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ChatResolver.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="63" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/TClassService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/UserClassMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/UserClassMappingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/UserClassMappingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/Tclass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding>
+            <element signature="e#1268#1269#0" expanded="false" />
+            <element signature="e#1299#1300#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/topNav.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="15" column="83" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/user/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="194" column="34" lean-forward="false" selection-start-line="194" selection-start-column="22" selection-end-line="194" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/show/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="120" column="20" lean-forward="false" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/controller/LiveShowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2124">
+          <caret line="59" column="56" lean-forward="false" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/controller/TeachShowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/TClassServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="37" column="53" lean-forward="false" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/logo/logo-1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/logo/logo-2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/logo/logo-3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/logo/logo-4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/logo/logo-0.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/dto/Show.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="46" column="32" lean-forward="false" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <folding>
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#860#861#0" expanded="false" />
+            <element signature="e#898#899#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/user/liveshow.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-413">
+          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ContentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/chat/content/GetHttpSessionConfigurator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/config/rtmpConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/liveShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="219" column="52" lean-forward="false" selection-start-line="219" selection-start-column="52" selection-end-line="219" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/Tuser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/chat/content/ChatContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="48" column="33" lean-forward="false" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+          <folding>
+            <element signature="e#865#866#0" expanded="false" />
+            <element signature="e#913#914#0" expanded="false" />
+            <element signature="e#953#954#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/chat/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.5.RELEASE/spring-context-4.2.5.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="565" column="0" lean-forward="false" selection-start-line="565" selection-start-column="0" selection-end-line="565" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/DanmakuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/impl/DanmakuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DanmakuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3708">
+          <caret line="103" column="78" lean-forward="false" selection-start-line="103" selection-start-column="78" selection-end-line="103" selection-end-column="78" />
+          <folding>
+            <marker date="1554376649476" expanded="true" signature="3638:3741" ph="select from danmaku" />
+            <marker date="1554376649476" expanded="true" signature="3828:3885" ph="delete from danmaku... " />
+            <marker date="1554376649476" expanded="true" signature="3986:4005" ph="delete from danmaku... " />
+            <marker date="1554376649476" expanded="true" signature="4241:4470" ph="insert into danmaku... " />
+            <marker date="1554376649476" expanded="true" signature="5576:5604" ph="select count... danmaku" />
+            <marker date="1554376649476" expanded="true" signature="6513:6781" ph="update danmaku... " />
+            <marker date="1554376649476" expanded="true" signature="6990:7443" ph="update danmaku... " />
+            <marker date="1554376649476" expanded="true" signature="7540:7776" ph="update danmaku... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ResolverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/dao/DanmakuMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../study/test/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/face.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/face/GsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/face/HttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="201" column="17" lean-forward="false" selection-start-line="201" selection-start-column="17" selection-end-line="201" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/face/AuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-937">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/face/Base64Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/resolver/ChatResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/show/liveShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="148" column="29" lean-forward="false" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1554432131376" expanded="true" signature="9595:9601" ph="&amp;nbsp;" />
+            <marker date="1554432131376" expanded="true" signature="9601:9607" ph="&amp;nbsp;" />
+            <marker date="1554432131376" expanded="true" signature="9607:9613" ph="&amp;nbsp;" />
+            <marker date="1554432131376" expanded="true" signature="9613:9619" ph="&amp;nbsp;" />
+            <marker date="1554432131376" expanded="true" signature="9620:9626" ph="&amp;nbsp;" />
+            <marker date="1554432131376" expanded="true" signature="9626:9632" ph="&amp;nbsp;" />
+            <marker date="1554432131376" expanded="true" signature="9632:9638" ph="&amp;nbsp;" />
+            <marker date="1554432131376" expanded="true" signature="9638:9644" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/face/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1379">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/controller/FaceRecoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/face/FaceRecoUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/chat/WebScoket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/TeahRecor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/service/LearnRecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/liveshow/entity/LearnRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>red5:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|red5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
