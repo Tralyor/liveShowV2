@@ -7,11 +7,11 @@ import java.util.Map;
 
 public class FaceRecoUtil {
 
-    public static String match(byte[] bytes1) {
+    public static String match(byte[] bytes1, String userPic) {
         // 请求url
         String url = "https://aip.baidubce.com/rest/2.0/face/v3/match";
         try {
-            byte[] bytes2 = FileUtil.readFileByBytes("C:\\Users\\10133\\Desktop\\5.jpg");
+            byte[] bytes2 = FileUtil.readFileByBytes(userPic);
             String image1 = Base64Util.encode(bytes1);
             String image2 = Base64Util.encode(bytes2);
 

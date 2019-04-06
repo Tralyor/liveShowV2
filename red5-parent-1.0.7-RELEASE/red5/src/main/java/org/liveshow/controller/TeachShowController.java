@@ -46,8 +46,10 @@ public class TeachShowController {
         Tuser tuser = SessionUtil.getUserInSession(req);
         TeahRecor teahRecor = teachRecordService.getReMaxClassNum(roomId);
 
-        if ( tuser == null || res == null || !res.getTeaching() || teahRecor == null ) {
-            return "show/index";
+        if ( res != null && res.getId() != null && tuser != null && res.getCreaterId().equals(tuser.getUserId()) ) {
+          //不过滤
+        } else if ( tuser == null || res == null || !res.getTeaching() || teahRecor == null ) {
+            return "redirect:/";
         }
 
         if ( userClassMappingService.isMapping(tuser.getUserId(), roomId) ) {
@@ -77,6 +79,8 @@ public class TeachShowController {
                 } else {
                     teachRecordService.addTeachRecord(classId, teahRecor.getClassNum()+1);
                 }
+                res.setTeaching(true);
+                tClassService.updateTeaching(res);
                 buildRes(show, true, "直播开启成功");
             } else {
                 buildRes(show, true, "直播开启失败");
@@ -89,7 +93,8 @@ public class TeachShowController {
                 learnRecordService.updateByUserIds(tmp);
                 teahRecor.setGmtEnd(String.valueOf(System.currentTimeMillis()));
                 teachRecordService.updateTeachRecord(teahRecor);
-
+                res.setTeaching(false);
+                tClassService.updateTeaching(res);
                 buildRes(show, true, "直播关闭成功");
             } else {
                 buildRes(show, true, "直播关闭失败");

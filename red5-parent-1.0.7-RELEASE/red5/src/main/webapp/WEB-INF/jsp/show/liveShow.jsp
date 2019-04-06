@@ -82,6 +82,10 @@
     </video>
 </div>
 
+<div id="notOnlinePerson" style="position:fixed;right:0;top:50px; height: 200px;width: 200px;overflow-x:hidden;background-color: #5bc0de">
+
+</div>
+
 <%@ include file="../common/resources-foot.jsp" %>
 <script type="text/javascript" src="/static/barrage/static/js/tinycolor-0.9.15.min.js"></script>
 <script type="text/javascript" src="/static/barrage/dist/js/jquery.barrager.js"></script>
@@ -139,19 +143,27 @@
         $.ajax({
             type : "POST",
             url : '/face/reco',
-            data : {data:img.src},
+            data : {
+                data:img.src,
+                roomId:"${room.id}"
+            },
             timeout : 60000,
             success : function(data){
                 console.log("success");
             }
         });
     };
+
+    // 定时器
 </script>
 <script>
     var type = "${sessionScope.user.type}";
 
     if (type == "1" && "${sessionScope.user.userId}" != "${room.createrId}") {
         type = "0";
+    }
+    if  ("${sessionScope.user.userId}" != "${room.createrId}") {
+        var t1=window.setInterval(captureImage, 60000);
     }
     console.log(type);
     <%--var isDark = ${isDark};--%>
@@ -324,6 +336,15 @@
                     content: "主播不在家咯",
                 });
                 // alert("主播不在家咯");
+            }
+        } else if (msg.type == "notOnlineStudent"){
+            if (msg.content != null && msg.content instanceof Array) {
+                var str = "<center><h4>缺勤名单</h4></center>";
+                for (var i = 0 ; i < msg.content.length; i ++ ) {
+                    str = str.concat("<center><span>"+ msg.content[i].userId+ "</span>:"+"<span>"+ msg.content[i].userName+ "</span></center></hr>")
+                }
+                $("#notOnlinePerson").html(str)
+                console.log(str);
             }
         }
 

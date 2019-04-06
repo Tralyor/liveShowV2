@@ -3,6 +3,7 @@ package org.liveshow.service.impl;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.liveshow.dao.UserClassMappingMapper;
+import org.liveshow.entity.UserClassMapping;
 import org.liveshow.entity.UserClassMappingExample;
 import org.liveshow.service.UserClassMappingService;
 import org.springframework.stereotype.Component;
@@ -33,5 +34,17 @@ public class UserClassMappingServiceImpl implements UserClassMappingService {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public List<UserClassMapping> getClassUser(Integer classId) {
+        if ( classId == null ) {
+            return null;
+        }
+        UserClassMappingExample example = new UserClassMappingExample();
+        UserClassMappingExample.Criteria criteria = example.createCriteria();
+        criteria.andClassIdEqualTo(classId);
+
+        return ucMapper.selectByExample(example);
     }
 }

@@ -18,8 +18,8 @@ import java.util.List;
 
 @Component
 public class LearnRecordServiceImpl implements LearnRecordService {
-    public static final String sqlTemplate = "update learn_record set gmt_out='%s' where id in (%s)";
-    public static final String getSqlByUserAndId = "update learn_record set gmt_out='%s' WHERE record_id = '%s' AND user_id = '123'";
+    public static final String sqlTemplate = "update learn_record set gmt_out='%s' where id in (%s) AND gmt_out IS NULL";
+    public static final String getSqlByUserAndId = "update learn_record set gmt_out='%s' WHERE record_id = '%s' AND user_id = '123' AND gmt_out IS NULL ";
 
     @Resource
     private LearnRecordMapper learnRecordMapper;
@@ -36,6 +36,8 @@ public class LearnRecordServiceImpl implements LearnRecordService {
         learnRecord.setUserId(userId);
         learnRecord.setGmtIn(String.valueOf(System.currentTimeMillis()));
         learnRecord.setRecordId(recordId);
+        learnRecord.setFaceRegoCount(0);
+        learnRecord.setFaceRegoSuccess(0);
         return learnRecordMapper.insert(learnRecord);
     }
 
@@ -73,6 +75,24 @@ public class LearnRecordServiceImpl implements LearnRecordService {
     }
 
     @Override
+    public LearnRecord queryRecordByUidAndTidAndGmtOutNull(String userId, Integer recordId) {
+        if ( StringUtils.isBlank(userId) || recordId == null ) {
+            return null;
+        }
+        LearnRecordExample example = new LearnRecordExample();
+        LearnRecordExample.Criteria criteria = example.createCriteria();
+
+        criteria.andUserIdEqualTo(userId);
+        criteria.andRecordIdEqualTo(recordId);
+        criteria.andGmtOutIsNull();
+        List<LearnRecord> res = learnRecordMapper.selectByExample(example);
+        if ( CollectionUtils.isEmpty(res)) {
+            return null;
+        }
+        return res.get(0);
+    }
+
+    @Override
     public void updateByUserIds(List<LearnRecord> records) {
         if ( CollectionUtils.isEmpty(records) ) {
             return;
@@ -100,6 +120,11 @@ public class LearnRecordServiceImpl implements LearnRecordService {
         String sql = String.format(getSqlByUserAndId,String.valueOf(System.currentTimeMillis()), teahRecor.getId().toString(), userId);
         learnRecordMapper.updateBySql(sql);
 
+    }
+
+    @Override
+    public void updateRecordById(LearnRecord record) {
+        learnRecordMapper.updateByPrimaryKey(record);
     }
 
 

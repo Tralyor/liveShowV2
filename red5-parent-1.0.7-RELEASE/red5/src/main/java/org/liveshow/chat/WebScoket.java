@@ -4,9 +4,15 @@ package org.liveshow.chat;
  * Created by Cjn on 2017/11/27.
  */
 
+import com.mysql.cj.xdevapi.JsonArray;
+import org.apache.commons.collections.CollectionUtils;
+import org.json.JSONObject;
 import org.liveshow.chat.content.GetHttpSessionConfigurator;
 import org.liveshow.entity.Tuser;
+import org.liveshow.entity.UserClassMapping;
 import org.liveshow.service.LearnRecordService;
+import org.liveshow.service.UserClassMappingService;
+import org.liveshow.service.UserService;
 import org.liveshow.service.resolver.ResolverFactory;
 import org.liveshow.util.SessionUtil;
 
@@ -16,6 +22,10 @@ import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 @ServerEndpoint(value="/WebScoket/{roomId}" , configurator = GetHttpSessionConfigurator.class)
@@ -33,10 +43,14 @@ public class WebScoket {
     private HttpSession httpSession;
 
     @Resource
-    ResolverFactory resolverFactory;
+    private ResolverFactory resolverFactory;
     @Resource
-    LearnRecordService learnRecordService;
-    
+    private LearnRecordService learnRecordService;
+    @Resource
+    private UserClassMappingService userClassMappingService;
+    @Resource
+    private UserService userService;
+
     public static synchronized int getOnlineCount() {
         return onlineCount;
     }
@@ -60,7 +74,7 @@ public class WebScoket {
         this.httpSession =(HttpSession) config.getUserProperties().get(HttpSession.class.getName());
         webSocketSet.add(this);     //加入set中
         addOnlineCount();           //在线数加1
-
+        broadCast();
         System.out.println("有新连接加入！当前在线人数为" + getOnlineCount() + "roomId:" + roomId);
     }
 
@@ -72,6 +86,7 @@ public class WebScoket {
         resolveEnd();
         webSocketSet.remove(this);  //从set中删除
         subOnlineCount();           //在线数减1
+        broadCast();
         System.out.println("有一连接关闭！当前在线人数为" + getOnlineCount());
     }
 
@@ -94,6 +109,7 @@ public class WebScoket {
     @OnError
     public void onError(Session session, Throwable error){
         resolveEnd();
+        broadCast();
         System.out.println("发生错误");
         error.printStackTrace();
     }
@@ -128,10 +144,73 @@ public class WebScoket {
     }
 
     private void resolveEnd() {
-        Tuser tuser = (Tuser) httpSession.getAttribute("user");
-        if ( tuser != null ) {
-            learnRecordService.updateByUserId(tuser.getUserId(), roomId);
+        try {
+            Tuser tuser = (Tuser) httpSession.getAttribute("user");
+            if ( tuser != null ) {
+                learnRecordService.updateByUserId(tuser.getUserId(), roomId);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+    }
+
+    //为了老师能够史是看到这个房间内还有那些人是没有到的
+    private void  broadCast() {
+        List<UserClassMapping> res =  userClassMappingService.getClassUser(roomId);
+        if (CollectionUtils.isEmpty(res) ) {
+            return;
+        }
+        List<Tuser> tusers = new ArrayList<>();
+        Set<String> allUid = new HashSet<>();
+        List<String> offLine = new ArrayList<>();
+        webSocketSet.forEach(val->{
+            Tuser tuser = (Tuser) val.getHttpSession().getAttribute("user");
+            if ( tuser != null && tuser.getUserId()!=null) {
+                allUid.add(tuser.getUserId());
+            }
+        });
+
+        res.forEach(item->{
+           if (!allUid.contains(item.getUserId()) ){
+               offLine.add(item.getUserId());
+           }
+        });
+
+        offLine.forEach(item->{
+            Tuser tmp = userService.queryUserByUserId(item);
+            if ( tmp != null ) {
+                Tuser tuserTmp = new Tuser();
+                tuserTmp.setUserId(tmp.getUserId());
+                tuserTmp.setUserName(tmp.getUserName());
+                tusers.add(tuserTmp);
+            }
+        });
+        Message<List<Tuser>> msg = new Message<>();
+        msg.setType("notOnlineStudent");
+        msg.setContent(tusers);
+        webSocketSet.forEach(item->{
+            if ( item.getRoomId() == getRoomId()) {
+                try {
+                    item.sendMessage(new JSONObject(msg).toString());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+    }
+
+    public static void main(String[] args) {
+        List<Tuser> tusers = new ArrayList<>();
+        Tuser tuser = new Tuser();
+        tuser.setUserName("!");
+        tuser.setUserId("123");
+        tusers.add(tuser);
+        Message<List<Tuser>> msg = new Message<>();
+        msg.setType("notOnlineStudent");
+        msg.setContent(tusers);
+        System.out.println();
+        System.out.println(JSONObject.valueToString(msg));
     }
 }
 

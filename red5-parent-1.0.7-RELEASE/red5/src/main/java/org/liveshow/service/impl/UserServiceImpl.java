@@ -34,4 +34,20 @@ public class UserServiceImpl implements UserService{
         }
         return null;
     }
+
+    @Override
+    public Tuser queryUserByUserId(String uid) {
+        if (StringUtils.isBlank(uid) ) {
+            return null;
+        }
+        TuserExample tuserExample = new TuserExample();
+        TuserExample.Criteria criteria = tuserExample.createCriteria();
+        criteria.andUserIdEqualTo(uid);
+        List<Tuser> res = tuserMapper.selectByExample(tuserExample);
+
+        if (CollectionUtils.isNotEmpty(res)) {
+            return res.get(0);
+        }
+        return null;
+    }
 }

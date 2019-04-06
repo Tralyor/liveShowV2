@@ -47,4 +47,12 @@ public class TClassServiceImpl implements TClassService {
 
         return false;
     }
+
+    @Override
+    public void updateTeaching(Tclass tclass) {
+        if ( tclass == null || tclass.getId() == null ) {
+            return;
+        }
+        tclassMapper.updateByPrimaryKey(tclass);
+    }
 }
