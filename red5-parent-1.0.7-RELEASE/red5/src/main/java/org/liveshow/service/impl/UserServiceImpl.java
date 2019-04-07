@@ -50,4 +50,9 @@ public class UserServiceImpl implements UserService{
         }
         return null;
     }
+
+    @Override
+    public int updateUser(Tuser tuser) {
+        return tuserMapper.updateByPrimaryKey(tuser);
+    }
 }

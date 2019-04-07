@@ -5,10 +5,13 @@ import com.google.gson.reflect.TypeToken;
 import org.liveshow.chat.Message;
 import org.liveshow.chat.WebScoket;
 import org.liveshow.chat.content.ChatContent;
+import org.liveshow.entity.TeahRecor;
 import org.liveshow.service.DanmakuService;
+import org.liveshow.service.TeachRecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.io.IOException;
 import java.lang.reflect.Type;
 
@@ -18,7 +21,9 @@ import java.lang.reflect.Type;
 @Service
 public class ChatResolver  implements ContentResolver{
     @Autowired
-    DanmakuService danmakuService;
+    private DanmakuService danmakuService;
+    @Resource
+    private TeachRecordService teachRecordService;
 
     @Override
     public void resolve(String msgJson, WebScoket webScoket) {
@@ -26,7 +31,14 @@ public class ChatResolver  implements ContentResolver{
         Type objectType = new TypeToken<Message<ChatContent>>(){}.getType();
         Message<ChatContent> message = gson.fromJson(msgJson,objectType);
         ChatContent chatContent = message.getContent();
-        int res = danmakuService.addDanmaku(chatContent.getUserId(),chatContent.getRoomId(),chatContent.getContent());
+        if ( chatContent == null || chatContent.getRoomId() == null  ) {
+            return;
+        }
+        TeahRecor teahRecor = teachRecordService.getReMaxClassNum(chatContent.getRoomId());
+        if ( teahRecor == null || teahRecor.getGmtEnd() != null || teahRecor.getId() == null) {
+             return;
+        }
+        int res = danmakuService.addDanmaku(chatContent.getUserId(),teahRecor.getId(),chatContent.getContent());
         if (res != 0){
             chatContent.setId(res);
             for(WebScoket item:webScoket.getWebSocketSet()){

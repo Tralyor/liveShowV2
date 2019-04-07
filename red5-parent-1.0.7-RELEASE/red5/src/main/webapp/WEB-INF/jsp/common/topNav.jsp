@@ -51,7 +51,7 @@
                                                         <img src="/static/img/logo.jpg" alt="">
                                                     </div>
                                                     <div class="user-btns">
-                                                        <a class="btn btn-large btn-primary btn-block" href="/person/">个人中心</a>
+                                                        <a class="btn btn-large btn-primary btn-block" href="/userInfo/self">个人中心</a>
                                                     </div>
                                                 </div>
                                             </div>

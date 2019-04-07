@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页livess2ss</title>
+    <title>首页</title>
     <%@ include file="../common/resources.jsp" %>
     <style>
         * {
