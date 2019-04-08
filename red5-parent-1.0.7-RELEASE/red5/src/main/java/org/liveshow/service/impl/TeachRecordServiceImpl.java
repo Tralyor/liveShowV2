@@ -34,6 +34,18 @@ public class TeachRecordServiceImpl implements TeachRecordService {
     }
 
     @Override
+    public List<TeahRecor> queryRecordByClassId(Integer classId) {
+        if ( classId == null ) {
+            return null;
+        }
+
+        TeahRecorExample teahRecorExample = new TeahRecorExample();
+        TeahRecorExample.Criteria criteria = teahRecorExample.createCriteria();
+        criteria.andClassIdEqualTo(classId);
+        return teahRecorMapper.selectByExample(teahRecorExample);
+    }
+
+    @Override
     public int addTeachRecord(Integer classId, Integer classNum) {
         if ( classId == null || classNum == null ) {
             return 0;

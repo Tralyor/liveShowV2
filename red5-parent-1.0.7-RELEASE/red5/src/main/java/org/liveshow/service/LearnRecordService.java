@@ -13,6 +13,8 @@ public interface LearnRecordService  {
 
     LearnRecord queryRecordByUidAndTidAndGmtOutNull(String userId, Integer recordId);
 
+    List<LearnRecord> queryRecordByUidAndTidAndGmtOutNotNull(String userId, Integer recordId);
+
     void updateByUserIds(List<LearnRecord> records);
 
     void updateByUserId(String userId, Integer classId);

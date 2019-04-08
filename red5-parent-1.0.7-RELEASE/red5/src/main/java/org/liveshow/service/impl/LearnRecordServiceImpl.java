@@ -93,6 +93,22 @@ public class LearnRecordServiceImpl implements LearnRecordService {
     }
 
     @Override
+    public List<LearnRecord> queryRecordByUidAndTidAndGmtOutNotNull(String userId, Integer recordId) {
+        if ( StringUtils.isBlank(userId) || recordId == null ) {
+            return null;
+        }
+        LearnRecordExample example = new LearnRecordExample();
+        LearnRecordExample.Criteria criteria = example.createCriteria();
+
+        criteria.andUserIdEqualTo(userId);
+        criteria.andRecordIdEqualTo(recordId);
+        criteria.andGmtOutIsNotNull();
+        List<LearnRecord> res = learnRecordMapper.selectByExample(example);
+
+        return res;
+    }
+
+    @Override
     public void updateByUserIds(List<LearnRecord> records) {
         if ( CollectionUtils.isEmpty(records) ) {
             return;

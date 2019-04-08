@@ -35,6 +35,15 @@ public class TClassServiceImpl implements TClassService {
     }
 
     @Override
+    public List<Tclass> queryClassByIds(List<Integer> classIds) {
+        TclassExample example = new TclassExample();
+        TclassExample.Criteria criteria = example.createCriteria();
+        criteria.andIdIn(classIds);
+
+        return tclassMapper.selectByExample(example);
+    }
+
+    @Override
     public boolean queryClassIsTeaching(Integer id) {
         Tclass res = queryTClassById(id);
         if ( res == null ) {

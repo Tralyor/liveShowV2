@@ -58,7 +58,7 @@
             },
             {
                 "p" : "考勤统计",
-                "a":""
+                "a":"/quality/self"
             }
         ]
         var nav1Data = '';
