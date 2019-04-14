@@ -8,4 +8,6 @@ public interface UserClassMappingService {
     boolean isMapping(String userId, Integer classId);
     List<UserClassMapping> getClassUser(Integer classId);
     List<UserClassMapping> getUserClass(String userId);
+    void  deleteClassMapping(Integer classId);
+    int insertMapping(UserClassMapping record);
 }

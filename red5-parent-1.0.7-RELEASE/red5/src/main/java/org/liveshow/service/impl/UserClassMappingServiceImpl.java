@@ -62,4 +62,24 @@ public class UserClassMappingServiceImpl implements UserClassMappingService {
         List<UserClassMapping>  res =  ucMapper.selectByExample(example);
         return res;
     }
+
+    @Override
+    public void deleteClassMapping(Integer classId) {
+        if ( classId == null ) {
+            return;
+        }
+        org.liveshow.entity.UserClassMappingExample example = new UserClassMappingExample();
+        UserClassMappingExample.Criteria criteria = example.createCriteria();
+
+        criteria.andClassIdEqualTo(classId);
+        ucMapper.deleteByExample(example);
+    }
+
+    @Override
+    public int insertMapping(UserClassMapping record) {
+        if ( record == null  ) {
+            return 0;
+        }
+        return ucMapper.insert(record);
+    }
 }

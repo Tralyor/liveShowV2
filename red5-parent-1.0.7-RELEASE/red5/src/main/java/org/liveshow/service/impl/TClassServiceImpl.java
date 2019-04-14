@@ -6,6 +6,7 @@ import org.liveshow.dao.TclassMapper;
 import org.liveshow.entity.Tclass;
 import org.liveshow.entity.TclassExample;
 import org.liveshow.service.TClassService;
+import org.red5.server.messaging.IFilter;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @Controller
 public class TClassServiceImpl implements TClassService {
+    public static final String sqlUpdateTemplate = "update tclass set class_name='%s', class_intro='%s' where id='%s'";
     @Resource
     TclassMapper tclassMapper;
 
@@ -44,6 +46,33 @@ public class TClassServiceImpl implements TClassService {
     }
 
     @Override
+    public List<Tclass> queryClassByCreatorId(String userId) {
+        if ( StringUtils.isBlank(userId)) {
+            return null;
+        }
+        TclassExample example = new TclassExample();
+        example.setOrderByClause("id DESC");
+        TclassExample.Criteria criteria = example.createCriteria();
+        criteria.andCreaterIdEqualTo(userId);
+
+        return tclassMapper.selectByExample(example);
+    }
+
+    @Override
+    public int addTclass(String userId, String className, String classInfo) {
+        if ( StringUtils.isBlank(classInfo) || StringUtils.isBlank(classInfo) || StringUtils.isBlank(userId)) {
+            return 0;
+        }
+        Tclass tclass = new Tclass();
+        tclass.setClassName(className);
+        tclass.setClassIntro(classInfo);
+        tclass.setCreaterId(userId);
+        tclass.setTeaching(false);
+
+        return tclassMapper.insert(tclass);
+    }
+
+    @Override
     public boolean queryClassIsTeaching(Integer id) {
         Tclass res = queryTClassById(id);
         if ( res == null ) {
@@ -63,5 +92,14 @@ public class TClassServiceImpl implements TClassService {
             return;
         }
         tclassMapper.updateByPrimaryKey(tclass);
+    }
+
+    @Override
+    public void updateTeachInfo(Integer classId,String className, String classInfo) {
+        if ( classId == null ) {
+            return ;
+        }
+        String sql = String.format(sqlUpdateTemplate,className,classInfo,classId);
+        tclassMapper.updateBySql(sql);
     }
 }

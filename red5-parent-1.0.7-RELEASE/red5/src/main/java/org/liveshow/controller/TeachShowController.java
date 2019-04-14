@@ -53,7 +53,7 @@ public class TeachShowController {
         }
 
         if ( userClassMappingService.isMapping(tuser.getUserId(), roomId) ) {
-            learnRecordService.addLearnRecordService(tuser.getUserId(), teahRecor.getClassNum());
+            learnRecordService.addLearnRecordService(tuser.getUserId(), teahRecor.getId());
         }
         model.addAttribute("room", res);
         return "show/liveShow";

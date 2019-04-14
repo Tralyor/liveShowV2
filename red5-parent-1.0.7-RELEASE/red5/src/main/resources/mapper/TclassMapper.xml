@@ -210,4 +210,7 @@
       teaching = #{teaching,jdbcType=BIT}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <update id="updateBySql" parameterType="java.lang.String">
+    ${value}
+  </update>
 </mapper>

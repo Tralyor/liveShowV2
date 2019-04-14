@@ -44,11 +44,7 @@ public class FaceRecoController {
             return;
         }
 
-        LearnRecord learnRecord = learnRecordService.queryRecordByUidAndTidAndGmtOutNull(tuser.getUserId(), teahRecor.getId());
-        if ( learnRecord == null ) {
-            return;
-        }
-        AsynTask asynTask = new AsynTask(learnRecord, k, learnRecordService, tuser.getImgAddress());
+        AsynTask asynTask = new AsynTask( tuser.getUserId(),teahRecor.getId(),k, learnRecordService, tuser.getImgAddress());
         threadPoolExecutor.execute(asynTask);
     }
 
@@ -58,16 +54,19 @@ public class FaceRecoController {
 class AsynTask  implements Runnable{
 
     private LearnRecordService learnRecordService;
-
     private String userPic;
     private LearnRecord learnRecord;
     private byte[] k;
+    private String userId;
+    private Integer techId;
 
-    public AsynTask(LearnRecord learnRecord , byte[] k, LearnRecordService learnRecordService, String userPic){
-        this.learnRecord = learnRecord;
+    public AsynTask(String userId ,Integer techId,byte[] k, LearnRecordService learnRecordService, String userPic){
         this.k = k;
         this.learnRecordService = learnRecordService;
         this.userPic= userPic;
+        this.userId = userId;
+        this.techId=techId;
+
     }
 
     @Override
@@ -76,11 +75,16 @@ class AsynTask  implements Runnable{
         try {
             Thread.sleep(1000);
             String errMsg = jsonObject.getString("error_msg");
-            if ("SUCCESS".equals(errMsg) ) {
+            LearnRecord learnRecord = learnRecordService.queryRecordByUidAndTidAndGmtOutNull(this.userId, this.techId);
+            if ( learnRecord == null ) {
+                return;
+            }
+             if ("SUCCESS".equals(errMsg) ) {
                 JSONObject result = jsonObject.getJSONObject("result");
                 if ( result == null || result.get("score") == null ) {
                     return ;
                 } else {
+
                     double score = (Double) result.get("score");
                     //人脸相似度打与75认为同一个人
                     if ( score > 75f ) {
@@ -92,9 +96,8 @@ class AsynTask  implements Runnable{
             } else {
                 updateLearnRecordModel(learnRecord, learnRecord.getFaceRegoCount()+1, learnRecord.getFaceRegoSuccess());
             }
-            System.out.println(learnRecordService);
             learnRecordService.updateRecordById(learnRecord);
-            System.out.println(errMsg);
+            System.out.println("count:"+learnRecord.getFaceRegoCount()+"success:"+learnRecord.getFaceRegoSuccess());
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (Exception e) {

@@ -28,4 +28,6 @@ public interface TclassMapper {
     int updateByPrimaryKeySelective(Tclass record);
 
     int updateByPrimaryKey(Tclass record);
+
+    int updateBySql(String sql);
 }

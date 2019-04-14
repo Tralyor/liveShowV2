@@ -29,6 +29,28 @@
     </div>
 </template>
 
+<template id="createClass">
+    <div class="login-tab-content">
+        <div class="login-tab-item login-show">
+            <form>
+                <div class="form-group">
+                    <label for="className">课程名称</label>
+                    <input type="text" class="form-control"  id="className" placeholder="课程名称">
+                </div>
+                <div class="form-group">
+                    <label for="classIntro">课程介绍</label>
+                    <input type="text" class="form-control" name="classIntro" id="classIntro" placeholder="课程介绍">
+                </div>
+                <button  class="btn btn-default" id="createClassInfo">创建课程</button>
+            </form>
+        </div>
+    </div>
+</template>
+
+<template id="stuList">
+
+</template>
+
 <script src="/static/js/plugins/html5shiv.min.js"></script>
 <script src="/static/js/plugins/popper.min.js"></script>
 <script src="/static/plugins/bootstrap/js/bootstrap-datetimepicker.min.js"></script>

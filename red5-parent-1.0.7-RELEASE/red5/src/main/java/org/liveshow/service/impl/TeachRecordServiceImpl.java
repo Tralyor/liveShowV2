@@ -34,6 +34,21 @@ public class TeachRecordServiceImpl implements TeachRecordService {
     }
 
     @Override
+    public TeahRecor queryRecordByRid(Integer rid) {
+        if ( rid == null ) {
+            return null;
+        }
+        TeahRecorExample teahRecorExample = new TeahRecorExample();
+        TeahRecorExample.Criteria criteria = teahRecorExample.createCriteria();
+        criteria.andIdEqualTo(rid);
+        List<TeahRecor> res = teahRecorMapper.selectByExample(teahRecorExample);
+        if ( CollectionUtils.isEmpty(res) ) {
+            return null;
+        }
+        return res.get(0);
+    }
+
+    @Override
     public List<TeahRecor> queryRecordByClassId(Integer classId) {
         if ( classId == null ) {
             return null;
@@ -43,6 +58,24 @@ public class TeachRecordServiceImpl implements TeachRecordService {
         TeahRecorExample.Criteria criteria = teahRecorExample.createCriteria();
         criteria.andClassIdEqualTo(classId);
         return teahRecorMapper.selectByExample(teahRecorExample);
+    }
+
+    @Override
+    public TeahRecor queryRecordByClassIdAndClassNum(Integer classId, Integer classNum) {
+        if ( classId == null || classNum == 0 ) {
+            return null;
+        }
+
+        TeahRecorExample teahRecorExample = new TeahRecorExample();
+        TeahRecorExample.Criteria criteria = teahRecorExample.createCriteria();
+        criteria.andClassIdEqualTo(classId);
+        criteria.andClassNumEqualTo(classNum);
+
+        List<TeahRecor> res = teahRecorMapper.selectByExample(teahRecorExample);
+        if ( CollectionUtils.isEmpty(res) ) {
+            return null;
+        }
+        return res.get(0);
     }
 
     @Override

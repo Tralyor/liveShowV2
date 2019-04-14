@@ -63,7 +63,7 @@
 <script>
     $('#testfile').fileinput({
         language: 'zh',
-        uploadUrl:'/user/img',
+        uploadUrl:'/userInfo/img',
         showCaption: true,
         showUpload: true,
         showRemove: true,

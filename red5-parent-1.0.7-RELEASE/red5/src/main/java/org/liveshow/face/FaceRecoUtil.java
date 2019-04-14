@@ -34,7 +34,6 @@ public class FaceRecoUtil {
             String accessToken = AuthService.getAuth();
 
             String result = HttpUtil.post(url, accessToken, "application/json", param);
-            System.out.println(result);
             return result;
         } catch (Exception e) {
             e.printStackTrace();

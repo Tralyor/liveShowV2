@@ -19,7 +19,9 @@ import java.util.List;
 @Component
 public class LearnRecordServiceImpl implements LearnRecordService {
     public static final String sqlTemplate = "update learn_record set gmt_out='%s' where id in (%s) AND gmt_out IS NULL";
-    public static final String getSqlByUserAndId = "update learn_record set gmt_out='%s' WHERE record_id = '%s' AND user_id = '123' AND gmt_out IS NULL ";
+    public static final String getSqlByUserAndId = "update learn_record set gmt_out='%s' WHERE record_id = '%s' AND user_id = '%s' AND gmt_out IS NULL ";
+    public static final String getSqlFaceCount = "update learn_record set face_rego_count='%s', face_rego_success='%s' WHERE id = '%s' AND user_id = '%s'";
+
 
     @Resource
     private LearnRecordMapper learnRecordMapper;
@@ -140,7 +142,8 @@ public class LearnRecordServiceImpl implements LearnRecordService {
 
     @Override
     public void updateRecordById(LearnRecord record) {
-        learnRecordMapper.updateByPrimaryKey(record);
+        String sql = String.format(getSqlFaceCount,record.getFaceRegoCount(),record.getFaceRegoSuccess(),record.getId(),record.getUserId());
+        learnRecordMapper.updateBySql(sql);
     }
 
 

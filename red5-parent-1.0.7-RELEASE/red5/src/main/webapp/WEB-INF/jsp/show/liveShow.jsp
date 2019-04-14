@@ -149,7 +149,6 @@
                 data:img.src,
                 roomId:"${room.id}"
             },
-            timeout : 60000,
             success : function(data){
                 console.log("success");
             }
@@ -165,7 +164,7 @@
         type = "0";
     }
     if  ("${sessionScope.user.userId}" != "${room.createrId}") {
-        var t1=window.setInterval(captureImage, 60000);
+        var t1=window.setInterval(captureImage, 100000);
     }
     console.log(type);
     <%--var isDark = ${isDark};--%>
