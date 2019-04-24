@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>个人信息维护</title>
     <%@ include file="../common/resources.jsp" %>
     <link href="/static/plugins/bootstrap/file/css/fileinput.min.css" rel="stylesheet"/>
     <style>
@@ -53,7 +53,13 @@
     </div>
 </div>
 <jsp:include page="../common/topNav.jsp"></jsp:include>
-<jsp:include page="../common/leftNav.jsp"></jsp:include>
+
+<c:if test="${sessionScope.user.type==0}">
+    <jsp:include page="../common/leftNav.jsp"></jsp:include>
+</c:if>
+<c:if test="${sessionScope.user.type==1}" var="flag" scope="session">
+    <jsp:include page="../common/leftNavTeach.jsp"></jsp:include>
+</c:if>
 <%@ include file="../common/resources-foot.jsp" %>
 </body>
 <script src="/static/js/plugins/jquery-3.2.1.min.js"></script>

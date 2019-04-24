@@ -45,7 +45,9 @@
                                             <div class="anim">
                                                 <div class="user-main">
                                                     <div class="user-info">
-                                                        <a href="/user/logout">欢迎，${user.userName},同学！</a>
+                                                        <a href="#">欢迎，${user.userName}</a>
+                                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                                        <a href="/user/loginOut">退出</a>
                                                     </div>
                                                     <div class="user-pic">
                                                         <img src="/static/img/logo.jpg" alt="">

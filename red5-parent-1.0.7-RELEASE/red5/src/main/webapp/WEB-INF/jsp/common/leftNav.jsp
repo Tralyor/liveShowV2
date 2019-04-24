@@ -59,6 +59,10 @@
             {
                 "p" : "考勤统计",
                 "a":"/quality/self"
+            },
+            {
+                "p" : "课程评价",
+                "a":"/evaluate/stuView"
             }
         ]
         var nav1Data = '';

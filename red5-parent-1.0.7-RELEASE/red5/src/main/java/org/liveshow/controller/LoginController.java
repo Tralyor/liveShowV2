@@ -36,4 +36,11 @@ public class LoginController {
         }
         return show;
     }
+    @RequestMapping("/loginOut")
+    public String doLoginOut(HttpServletRequest request, HttpServletResponse response){
+        Show show = new Show();
+        request.getSession().setAttribute("user",null);
+        return "redirect:/";
+    }
+
 }

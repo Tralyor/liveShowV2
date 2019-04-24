@@ -10,6 +10,7 @@ import org.red5.server.messaging.IFilter;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -38,6 +39,9 @@ public class TClassServiceImpl implements TClassService {
 
     @Override
     public List<Tclass> queryClassByIds(List<Integer> classIds) {
+        if(CollectionUtils.isEmpty(classIds)) {
+            return new ArrayList<Tclass>();
+        }
         TclassExample example = new TclassExample();
         TclassExample.Criteria criteria = example.createCriteria();
         criteria.andIdIn(classIds);
