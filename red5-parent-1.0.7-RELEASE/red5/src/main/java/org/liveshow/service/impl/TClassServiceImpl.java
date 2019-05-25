@@ -38,6 +38,12 @@ public class TClassServiceImpl implements TClassService {
     }
 
     @Override
+    public List<Tclass> queryAllClass() {
+        TclassExample example = new TclassExample();
+        return tclassMapper.selectByExample(example);
+    }
+
+    @Override
     public List<Tclass> queryClassByIds(List<Integer> classIds) {
         if(CollectionUtils.isEmpty(classIds)) {
             return new ArrayList<Tclass>();

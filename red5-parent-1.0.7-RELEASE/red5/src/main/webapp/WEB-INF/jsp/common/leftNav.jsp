@@ -50,7 +50,7 @@
     </ul>
 </div>
 <script>
-    $(function(){
+
         var nav1List = [
             {
                 "p" : "个人信息维护",
@@ -67,12 +67,11 @@
         ]
         var nav1Data = '';
         for(let i=0;i<nav1List.length;i++){
-            nav1Data+= "<li class='nav1-item'><a href='"+nav1List[i].a+"'><span>"+nav1List[i].p+"</span></a><ul>"
-            nav1Data+="</ul></li>"
+            nav1Data+= "<li class='nav1-item' id='navStyle"+i+"'><a href='"+nav1List[i].a+"'><span>"+nav1List[i].p+"</span></a><li>"
         }
         console.log(nav1Data)
         $('#aat').html(nav1Data)
-    })
+
 
     $(function(){
         // nav1收缩展开

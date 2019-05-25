@@ -70,7 +70,7 @@
 
     <div id="notif"
          style="border: solid 1px #E5E4E4; height: 150px;border-radius:1%;width: 80%; margin: 0 auto;margin-top: 15px">
-        <h3 style="text-align: center">直播公告</h3>
+        <h3 style="text-align: center">课程简介</h3>
         <div style="text-align: center;width: 80%;height: 80px;line-height:80px; margin: 0 auto">
             <span>${room.classIntro}</span>
         </div>
@@ -164,7 +164,7 @@
         type = "0";
     }
     if  ("${sessionScope.user.userId}" != "${room.createrId}") {
-        var t1=window.setInterval(captureImage, 100000);
+        var t1=window.setInterval(captureImage, 1000);
     }
     console.log(type);
     <%--var isDark = ${isDark};--%>

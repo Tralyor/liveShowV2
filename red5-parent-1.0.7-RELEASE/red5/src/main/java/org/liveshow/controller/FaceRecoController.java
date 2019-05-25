@@ -43,8 +43,8 @@ public class FaceRecoController {
         if ( tuser == null || teahRecor == null || tuser.getImgAddress() == null) {
             return;
         }
-
-        AsynTask asynTask = new AsynTask( tuser.getUserId(),teahRecor.getId(),k, learnRecordService, tuser.getImgAddress());
+        String path = "C:\\workspace\\liveShow\\liveShowV2\\red5-parent-1.0.7-RELEASE\\red5\\target\\red5\\" + tuser.getImgAddress();
+        AsynTask asynTask = new AsynTask( tuser.getUserId(),teahRecor.getId(),k, learnRecordService,path );
         threadPoolExecutor.execute(asynTask);
     }
 
@@ -87,7 +87,7 @@ class AsynTask  implements Runnable{
 
                     double score = (Double) result.get("score");
                     //人脸相似度打与75认为同一个人
-                    if ( score > 75f ) {
+                    if ( score > 60f ) {
                         updateLearnRecordModel(learnRecord, learnRecord.getFaceRegoCount()+1, learnRecord.getFaceRegoSuccess()+1);
                     } else {
                         updateLearnRecordModel(learnRecord, learnRecord.getFaceRegoCount()+1, learnRecord.getFaceRegoSuccess());

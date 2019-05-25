@@ -18,12 +18,14 @@
             width: 85%;
 
         }
+        .border {border-radius:10px;}
     </style>
 </head>
 <div id="main">
-    <h3 style="margin-left: 30px;">欢迎您，${sessionScope.user.userName}!</h3>
-    <center><form class="form-horizontal" style="margin-top: 50px;">
-        <div class="form-group">
+
+    <center><form class="form-horizontal border" style="margin-top: 50px;background-color: white;width: 90%;height: 400px;margin-bottom: 50px">
+        <h4 style="padding-top: 40px;font-family: Microsoft YaHei">修改密码</h4>
+        <div class="form-group" style="padding-top: 5%">
             <label for="userId" class="col-sm-3 control-label">学号：</label>
             <div class="col-sm-6">
                 <input type="email" class="form-control" id="userId" value="${sessionScope.user.userId}" disabled>
@@ -47,15 +49,17 @@
             </div>
         </div>
     </form></center>
-    <h3 style="margin-left: 30px;">上传真人图片，用于人脸考勤</h3>
-    <div style="width: 80%;margin: 0 auto;">
+    <center><div style="width: 90%; background-color: white;" class="border">
+        <center><h4 style="padding-top: 40px;font-family: Microsoft YaHei">上传图片</h4></center>
         <input type="file" id="testfile" name="file" multiple style="width: 80%" />
-    </div>
+    </div></center>
+    <div style="margin-top: 50px"></div>
 </div>
 <jsp:include page="../common/topNav.jsp"></jsp:include>
 
 <c:if test="${sessionScope.user.type==0}">
     <jsp:include page="../common/leftNav.jsp"></jsp:include>
+
 </c:if>
 <c:if test="${sessionScope.user.type==1}" var="flag" scope="session">
     <jsp:include page="../common/leftNavTeach.jsp"></jsp:include>
@@ -126,5 +130,9 @@
 
         return false;
     });
+    $('.nav1-item>ul>li').css('background','none')
+    $('#navStyle0').css('background','orange')
+    $('#navStyle0>a').css('color','#FFF')
+    $('#navStyle0>a').css('background','rgba(0,0,0,.1)')
 </script>
 </html>

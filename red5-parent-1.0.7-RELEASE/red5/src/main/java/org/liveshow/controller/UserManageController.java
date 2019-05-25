@@ -101,7 +101,7 @@ public class UserManageController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        user.setImgAddress(fileName);
+        user.setImgAddress(logoPathDir+ File.separator   + logImageName);
 
         int res = userService.updateUser(user);
         if ( res > 0 ) {

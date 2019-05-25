@@ -73,11 +73,13 @@ public class TeachShowController {
         }
 
         if ( state == 1 ) {
-            if (res.getCreaterId() != null && res.getCreaterId().equals(tuser.getUserId()) && teahRecor.getGmtEnd() != null) {
+            if (res.getCreaterId() != null && res.getCreaterId().equals(tuser.getUserId()) ) {
                 if ( teahRecor == null ) {
                     teachRecordService.addTeachRecord(classId, 1);
                 } else {
-                    teachRecordService.addTeachRecord(classId, teahRecor.getClassNum()+1);
+                    if ( teahRecor.getGmtEnd()!=null ){
+                        teachRecordService.addTeachRecord(classId, teahRecor.getClassNum()+1);
+                    }
                 }
                 res.setTeaching(true);
                 tClassService.updateTeaching(res);

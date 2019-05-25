@@ -22,7 +22,9 @@
                         <label for="password">密码</label>
                         <input type="password" class="form-control" name="password" id="password" placeholder="Password">
                     </div>
-                    <button type="submit" class="btn btn-default" id="login">Submit</button>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default form-control" id="login" style="margin-top: 5%">登陆</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -41,7 +43,9 @@
                     <label for="classIntro">课程介绍</label>
                     <input type="text" class="form-control" name="classIntro" id="classIntro" placeholder="课程介绍">
                 </div>
-                <button  class="btn btn-default" id="createClassInfo">创建课程</button>
+                <div>
+                    <button  class="btn btn-default form-control" style="margin-top: 20px" id="createClassInfo">创建课程</button>
+                </div>
             </form>
         </div>
     </div>
