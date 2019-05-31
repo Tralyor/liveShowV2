@@ -43,7 +43,7 @@ public class FaceRecoController {
         if ( tuser == null || teahRecor == null || tuser.getImgAddress() == null) {
             return;
         }
-        String path = "C:\\workspace\\liveShow\\liveShowV2\\red5-parent-1.0.7-RELEASE\\red5\\target\\red5\\" + tuser.getImgAddress();
+        String path = tuser.getImgAddress();
         AsynTask asynTask = new AsynTask( tuser.getUserId(),teahRecor.getId(),k, learnRecordService,path );
         threadPoolExecutor.execute(asynTask);
     }
