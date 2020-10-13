@@ -70,7 +70,7 @@
 		<logback.version>1.1.6</logback.version>
 		<quartz.version>2.2.2</quartz.version>
 		<bc.version>1.54</bc.version>
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<isoparser.version>1.1.17</isoparser.version>
 		<tika.version>1.11</tika.version>
 		<ehcache.version>2.6.11</ehcache.version>
